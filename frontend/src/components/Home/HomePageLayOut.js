@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {
     Button,
     Container,
@@ -10,7 +10,6 @@ import {
     Image,
     List,
     Message,
-    Placeholder,
     Segment,
 } from 'semantic-ui-react';
 import image from '../../assets/plan/strategic.jpg'
@@ -22,10 +21,10 @@ import image2 from '../../assets/1.jpg'
 const HomepageLayout = () => {
 
         return (
-            <>
-                <Segment vertical style={{padding: '0'}}>
-                    <Container>
-                        <Grid stackable>
+            <Container>
+                <Segment vertical style={{paddingTop: '2em'}}>
+                    <Container >
+                        <Grid stackable attached>
                             <Grid.Row>
                                 <Grid.Column width={11}>
                                     <ImageGallaryComponent/>
@@ -70,7 +69,7 @@ const HomepageLayout = () => {
                         </Grid>
                     </Container>
                 </Segment>
-                <Segment style={{padding: ' 1.7em 0'}} vertical>
+                <Segment style={{padding: ' 1.7em 0'}} vertical attached  >
                     <Grid container stackable verticalAlign='middle'>
                         <Grid.Row>
                             <Grid.Column width={10}>
@@ -128,7 +127,7 @@ const HomepageLayout = () => {
                                         <b>ICU is complete and will be Launched Soon .</b>
                                     </p>
                                 </Message>
-                                <Message info>
+                                <Message info  >
                                     <Message.Header>Changes in Service</Message.Header>
                                     <p>
                                         Did you know that you can now pay all your bills via Mpesa? We have introduced
@@ -218,7 +217,7 @@ const HomepageLayout = () => {
                     </Grid>
                 </Segment>
 
-                <Segment style={{padding: '0'}} vertical>
+                <Segment  vertical attached>
                     <Container>
                         <Grid celled columns='equal' stackable>
                             <Grid.Row textAlign='center'>
@@ -274,7 +273,7 @@ const HomepageLayout = () => {
                     </Container>
                 </Segment>
 
-            </>
+            </Container>
         );
     }
 ;

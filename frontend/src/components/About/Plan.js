@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button, Header, List} from "semantic-ui-react";
+import {Button, List} from "semantic-ui-react";
 import AboutContainer from "./AboutContainer";
 
 

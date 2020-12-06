@@ -15,7 +15,7 @@ const ContactUs = () => {
     }
     return (
         <Container>
-            <Segment style={{padding: '2em 0'}} vertical>
+            <Segment style={{padding: '2em 0'}} vertical size='mini'>
                 <Grid stackable>
                     <Grid.Row>
                         <Grid.Column width={11}>

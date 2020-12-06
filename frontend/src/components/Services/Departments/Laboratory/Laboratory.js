@@ -1,6 +1,6 @@
 import React from 'react';
 import AboutContainer from "../../../About/AboutContainer";
-import {Header, Table, Label, Container} from "semantic-ui-react";
+import {Header, Table, Label} from "semantic-ui-react";
 
 
 class Laboratory extends React.PureComponent {

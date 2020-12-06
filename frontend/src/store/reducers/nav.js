@@ -5,7 +5,7 @@ const initialState = {
     active: 'home'
 }
 
-export default function (state = initialState, {type, payload}) {
+export default function navReducer (state = initialState, {type, payload}) {
     switch (type) {
         case SET_FIXED_NAV:
             return {

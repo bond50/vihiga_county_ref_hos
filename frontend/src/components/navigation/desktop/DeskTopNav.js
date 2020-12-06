@@ -1,5 +1,5 @@
 import React from 'react';
-import {Segment, Visibility, Header, Container, Grid,Icon} from 'semantic-ui-react';
+import {Segment, Visibility, Header, Container, Grid} from 'semantic-ui-react';
 import {connect} from 'react-redux'
 import {removeFixedNav, setFixedNav} from "../../../store/actions/nav";
 import {withRouter} from "react-router-dom";

@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react';
-import {Form, Header, Input, Message, TextArea} from "semantic-ui-react";
+import {Form,Input, Message, TextArea} from "semantic-ui-react";
 import {Field, reduxForm} from 'redux-form';
 import {validate} from "./validation";
 
