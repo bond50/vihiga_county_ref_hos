@@ -1,11 +1,17 @@
 import React from 'react';
 import {Button, Icon, Grid,  Segment, Container, Divider, Message,} from "semantic-ui-react";
 import ContactForm from "./ContactForm";
+import axios from "axios";
+
 
 
 const ContactUs = () => {
-    const onSubmit = (formValues) => {
-        console.log(formValues)
+    const onSubmit = ({email,firstname,lastname,subject,message}) => {
+
+        axios.post('http://127.0.0.1:8000/api/contact/',{firstname,lastname,email,subject,message})
+            .then(res=>(
+                console.log(res)
+            ))
     }
     return (
         <Container>
