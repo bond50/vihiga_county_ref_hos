@@ -8,7 +8,7 @@ The first thing to do is to clone the repository:
 
 	$ cd vihiga_county_referral_hospital/frontend
 	
-Run npm install to install all dependancies
+Run npm install to install all dependencies
 
 	$ npm install
 
