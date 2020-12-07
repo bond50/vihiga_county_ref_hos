@@ -3,8 +3,6 @@ import ReactDOM from 'react-dom';
 import App from './containers/App';
 import './index.css';
 import 'semantic-ui-css/semantic.min.css';
-
-
 import reducer  from './store/reducers'
 import {applyMiddleware, createStore} from "redux";
 import {Provider} from 'react-redux';

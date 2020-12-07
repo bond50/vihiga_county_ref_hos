@@ -30,10 +30,8 @@ const renderError = ({error, touched}) => {
 const renderTexArea = ({input, placeholder, meta}) => (
     <Form.Field error={!!(meta.touched && meta.error)}>
         <Form.TextArea
-              fluid
             {...input}
             placeholder={placeholder}
-
         />
         {renderError(meta)}
     </Form.Field>
@@ -55,7 +53,7 @@ const ContactForm = ({handleSubmit,pristine, reset, submitting}) => {
                     component={renderFields}
                     name='firstname'
                     placeholder='First Name'
-                    error
+
                 />
                 <Field
                     control={Input}
@@ -81,7 +79,7 @@ const ContactForm = ({handleSubmit,pristine, reset, submitting}) => {
                     name='message'
                     placeholder='Type Your Message Here'
                 />
-                <Form.Group inline  fluid>
+                <Form.Group inline >
                     <Form.Button primary disabled={submitting}>Submit</Form.Button>
                     <Form.Button onClick={reset} disabled={pristine || submitting}>Rest Fields</Form.Button>
                 </Form.Group>

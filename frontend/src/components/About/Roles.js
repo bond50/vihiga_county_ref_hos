@@ -1,14 +1,14 @@
 import React from 'react';
-import {  List} from "semantic-ui-react";
+import {Header, List} from "semantic-ui-react";
 import AboutContainer from "./AboutContainer";
 
 const Roles = () => <AboutContainer
     title='Roles played by vihiga county referral hospital'>
-    <h3>
+    <Header as='h5' >
         VCRH plays its role in the county by providing a wide range of health services in partnership
         with the greater community and other institutions.<br/> Some of the roles played by the hospital in
         the county include;
-    </h3>
+    </Header>
     <List as='ol'>
         <List.Item as='li'> Acting as a county referral hospitals for the 3 sub county hospitals and as an
             intermediary to the National and Teaching referral hospitals.
@@ -26,6 +26,7 @@ const Roles = () => <AboutContainer
         <List.Item as='li'>Providing technical support to sub-county hospitals and health
             centers.
         </List.Item>
+
     </List>
 </AboutContainer>
 

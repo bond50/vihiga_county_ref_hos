@@ -16,7 +16,7 @@ const Corousel = () => <Carousel autoPlay infiniteLoop showThumbs={false}>
             <p className="legend">Legend 2</p>
         </>
         <>
-            <img src={image1} alt='mmm'/>
+            <img  src={image1} alt='mmm'/>
             <p className="legend">Legend 3</p>
         </>
     </Carousel>;
