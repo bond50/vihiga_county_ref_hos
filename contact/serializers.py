@@ -1,7 +1,7 @@
 from rest_framework import serializers
 from .models import Contact
 from django.core.mail import send_mail
-
+from vihiga.settings import EMAIL_HOST_USER
 
 class ContactSerializer(serializers.ModelSerializer):
     class Meta:
@@ -18,8 +18,9 @@ class ContactSerializer(serializers.ModelSerializer):
         send_mail(
             subject,
             message,
-            instance.email,
-            ['galavu10@gmail.com'],
+            EMAIL_HOST_USER,
+            [EMAIL_HOST_USER],
             fail_silently=False,
         )
+
         return instance

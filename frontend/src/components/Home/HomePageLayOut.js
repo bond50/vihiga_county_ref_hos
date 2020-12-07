@@ -130,11 +130,11 @@ const HomepageLayout = () => (
                                 </Message.List>
                             </Message>
                         </Grid.Column>
-                        <Grid.Column width={11}>
-                            <Message attached info>
-                                <Header as='h3'>
+                        <Grid.Column width={11} style={{padding:'2em 0'}}>
+                            <Message warning>
+                                <Message.Header as='h3'>
                                     Summery Of Strategic Plan Objectives
-                                </Header>
+                                </Message.Header>
                                 <p>
                                     The VCRH 2018-2022 strategic plan entailed objectives to improve service delivery to a
                                     status
@@ -195,7 +195,7 @@ const HomepageLayout = () => (
                 </Grid>
             </Segment>
 
-            <Segment placeholder style={{marginBottom: '1.5em'}}>
+            <Segment placeholder style={{margin: '2em '}}>
                 <Grid columns={3} stackable textAlign='center'>
                     <Divider vertical><Icon name='angle double right'/></Divider>
                     <Grid.Row verticalAlign='middle'>

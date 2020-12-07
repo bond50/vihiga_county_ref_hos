@@ -6,8 +6,8 @@ export const menuStyle = {
     transition: 'box-shadow 0.5s ease, padding 0.5s ease',
 }
 export const fixedMenuStyle = {
-    backgroundColor: '#4ee44e',
-    border: '2px solid #ddd',
+    backgroundColor: '#2cc73e',
+    border: '1px solid #ddd',
     boxShadow: '0px 3px 5px rgba(0, 0, 0, 0.2)',
 
 }

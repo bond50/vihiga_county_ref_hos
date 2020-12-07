@@ -35,6 +35,8 @@ import Tenders from "../components/Tenders/Tenders";
 import Training from "../components/Services/Training/training";
 import Hand from "../components/Covid19/Hand";
 import Preparedness from "../components/Covid19/Preparedness";
+import Success from "../components/messages/success";
+import Error from "../components/messages/error";
 
 
 const App = () => {
@@ -82,6 +84,9 @@ const App = () => {
                         <Route path='/covid-19/hand' exact component={Hand}/>
                         <Route path='/covid-19/covid' exact component={Covid}/>
                         <Route path='/covid-19/prep' exact component={Preparedness}/>
+
+                        <Route path='/success' exact component={Success}/>
+                        <Route path='/error' exact component={Error}/>
 
 
 

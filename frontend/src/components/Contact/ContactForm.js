@@ -38,7 +38,9 @@ const renderTexArea = ({input, placeholder, meta}) => (
 
 
 );
-const ContactForm = ({handleSubmit,pristine, reset, submitting}) => {
+const ContactForm = ({handleSubmit,pristine, reset, submitting, submitSucceeded, ...props}) => {
+    console.log(props)
+
 
     return (
         <Fragment>

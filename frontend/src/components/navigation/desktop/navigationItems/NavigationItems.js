@@ -21,8 +21,7 @@ const NavigationItems = ({activeItem, handleItemClick, fixed}) => (
         secondary
         stackable
         widths={8}
-        size='small'
-        inverted={!fixed}
+        inverted
         style={fixed ? fixedMenuStyle : menuStyle}
     >
         {logo()}

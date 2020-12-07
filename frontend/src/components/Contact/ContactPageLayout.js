@@ -1,24 +1,30 @@
-import React from 'react';
+import React ,{useState} from 'react';
 import {Button, Icon, Grid, Segment, Container, Divider, Message,} from "semantic-ui-react";
 import ContactForm from "./ContactForm";
+import {useHistory} from "react-router";
 import axios from "axios";
 
 
 const ContactUs = () => {
+    const [submit,setSubmit]= useState(false);
+  let history= useHistory()
     const onSubmit = ({email, firstname, lastname, subject, message}) => {
 
         axios.post('http://127.0.0.1:8000/api/contact/', {firstname, lastname, email, subject, message})
-            .then(res => (
-                console.log(res)
-            ))
+            .then(() => (
+                history.push('/succes')
+
+            )).catch(()=>  history.push('/error')
+        )
     }
+
     return (
         <Container>
             <Segment style={{padding: '2em 0'}} vertical size='mini'>
                 <Grid stackable>
                     <Grid.Row>
                         <Grid.Column width={11}>
-                            <ContactForm onSubmit={onSubmit}/>
+                            <ContactForm onSubmit={onSubmit} />
                         </Grid.Column>
                         <Grid.Column width={5}>
                             <Message
