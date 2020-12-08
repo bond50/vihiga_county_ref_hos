@@ -2,7 +2,6 @@ import React, { Fragment } from 'react';
 import { Form, Input, Message, TextArea } from "semantic-ui-react";
 import { Field, reduxForm } from 'redux-form';
 import { validate } from "./validation";
-import { SubmissionError } from 'redux-form'
 import { backEndUrl } from '../../utils/common.resource';
 
 
@@ -99,7 +98,7 @@ const ContactForm = ({ handleSubmit, pristine, reset, submitting, submitSucceede
                     placeholder='Type Your Message Here'
                 />
                 <Form.Group inline >
-                    <Form.Button primary disabled={submitting}>Submit</Form.Button>
+                    <Form.Button primary disabled={pristine || submitting}>Submit</Form.Button>
                     <Form.Button onClick={reset} disabled={pristine || submitting}>Rest Fields</Form.Button>
                 </Form.Group>
             </Form>
