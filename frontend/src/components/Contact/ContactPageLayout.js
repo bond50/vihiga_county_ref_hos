@@ -12,7 +12,7 @@ const ContactUs = () => {
 
         axios.post('http://127.0.0.1:8000/api/contact/', {firstname, lastname, email, subject, message})
             .then(() => (
-                history.push('/succes')
+                history.push('/success')
 
             )).catch(()=>  history.push('/error')
         )
