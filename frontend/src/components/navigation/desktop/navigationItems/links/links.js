@@ -25,6 +25,7 @@ export const services = () => (
         <Dropdown.Item text='ICU' as={Link} to='/services/departments/icu'/>
         <Dropdown.Item text='Ambulance' as={Link} to='/services/departments/ambulance'/>
         <Dropdown.Item text='Nursing Services' as={Link} to='/services/departments/nursing'/>
+        <Dropdown.Item text='Health Records' as={Link} to='/services/departments/records'/>
     </>
 )
 

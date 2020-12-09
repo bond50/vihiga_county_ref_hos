@@ -1,0 +1,10 @@
+
+p.legend {
+
+    font-size: 20px!important;
+    font-weight: 900!important;
+    text-shadow: 3px 3px #15b000;;
+    text-transform: uppercase;
+    animation-delay: 1s;
+    animation-duration: 2s;
+}

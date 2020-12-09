@@ -37,6 +37,7 @@ import Hand from "../components/Covid19/Hand";
 import Preparedness from "../components/Covid19/Preparedness";
 import Success from "../components/messages/success";
 import Error from "../components/messages/error";
+import HealthRecords from "../components/Services/Departments/HealthRecords";
 
 
 const App = () => {
@@ -69,6 +70,7 @@ const App = () => {
                         <Route path='/services/departments/icu' exact component={Icu}/>
                         <Route path='/services/departments/ambulance' exact component={Ambulance}/>
                         <Route path='/services/departments/nursing' exact component={Nursing}/>
+                        <Route path='/services/departments/records' exact component={HealthRecords}/>
 
                         <Route path='/media-center/downloads' exact component={Downloads}/>
                         <Route path='/media-center/events' exact component={Events}/>
