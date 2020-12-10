@@ -213,23 +213,23 @@ const HomepageLayout = () => (
                 <Grid columns='equal' stackable celled container>
                     <Grid.Row textAlign='center'>
                         <Grid.Column style={{padding: '5em 0em'}}>
-                            <Header as='h3' style={{fontSize: '2em'}}>
+                            <Header as='h3' style={{fontSize: '1.88em'}}>
                                 Our Mission
                             </Header>
-                            <p style={{fontSize: '1.33em'}}>A facility of choice in health care provision</p>
+                            <p style={{fontSize: '1.11em'}}>A facility of choice in health care provision</p>
                         </Grid.Column>
                         <Grid.Column style={{padding: '5em 0em'}}>
-                            <Header as='h3' style={{fontSize: '2em'}}>
+                            <Header as='h3' style={{fontSize: '1.88em'}}>
                                 Our Vision
                             </Header>
-                            <p style={{fontSize: '1.33em'}}>
+                            <p style={{fontSize: '1.11em'}}>
                                 To provide quality preventive,<br/> curative and rehabilitative health care services.</p>
                         </Grid.Column>
-                        <Grid.Column style={{padding: '5em 0em'}}>
-                            <Header as='h3' style={{fontSize: '2em'}}>
+                        <Grid.Column style={{padding: '2em 0em'}}>
+                            <Header as='h3' style={{fontSize: '1.88em'}}>
                                 Core Values
                             </Header>
-                            <div style={{fontSize: '1.33em'}}>
+                            <div style={{fontSize: '1.11em'}}>
                                 <List as='ul'>
                                     <List.Item>Accountability</List.Item>
                                     <List.Item>Commitment</List.Item>
