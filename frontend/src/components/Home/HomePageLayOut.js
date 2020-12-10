@@ -19,7 +19,7 @@ import image2 from '../../assets/1.jpg'
 
 const HomepageLayout = () => (
         <>
-            <Container style={{paddingTop: '0.3em'}}>
+            <Container style={{paddingTop: '5em'}}>
                 <Grid stackable>
                     <Grid.Row stretched>
                         <Grid.Column width={11}>
@@ -71,14 +71,14 @@ const HomepageLayout = () => (
                     </Grid.Row>
                 </Grid>
             </Container>
-            <Segment vertical style={{paddingTop: '6em '}}>
+            <Segment vertical style={{paddingTop: '6em'}}>
                 <Grid container stackable>
                     <Grid.Row stretched>
                         <Grid.Column width={11}>
                             <Header as='h3' style={{fontSize: '2em'}}>
                                 Welcome !!!!
                             </Header>
-                            <p>Vihiga County Referral Hospital (VCRH) has offered services to the people
+                            <p >Vihiga County Referral Hospital (VCRH) has offered services to the people
                                 of Vihiga and its environs for the last 20 years. At inception it was referred to as the
                                 Vihiga
                                 District Hospital and later renamed following devolution of health services in Kenya. In
@@ -143,65 +143,62 @@ const HomepageLayout = () => (
                     </Grid.Row>
                 </Grid>
             </Segment>
-            <Segment vertical attached style={{paddingTop: '6em '}}>
-                <Grid container stackable >
-                    <Grid.Row >
-                        <Grid.Column width={11} >
-                            <List>
-                                <List.Header as='h3'>
-                                    Summery Of Strategic Plan Objectives
-                                </List.Header>
-                                <p>
-                                    The VCRH 2018-2022 strategic plan entailed objectives to improve service delivery to
-                                    a
-                                    status
-                                    commensurate with a level 5 referral hospital. They were drawn from the WHO pillars
-                                    of
-                                    strengthening health systems. Consequently, the strategic objectives of the
-                                    strategic
-                                    plan
-                                    were:</p>
-                                <List.Content>
-                                    <List.Item>
-                                        <Icon name='right triangle'/>
-                                        To have an effective and efficient hospital management, leadership
-                                        and
-                                        governance system.
-                                    </List.Item>
-                                    <List.Item>
-                                        <Icon name='right triangle'/>
-                                        To broaden the scope and enhance the quality of clinical
-                                        services.
-                                    </List.Item>
-                                    <List.Item>
-                                        <Icon name='right triangle'/>
-                                        To optimize health workforce size, skills, motivation and
-                                        distribution.
-                                    </List.Item>
-                                    <List.Item>
-                                        <Icon name='right triangle'/>
-                                        To have an efficient health management and information
-                                        system
-                                    </List.Item>
-                                    <List.Item>
-                                        <Icon name='right triangle'/>
-                                        To modernize and revolutionize health infrastructure.
-                                    </List.Item>
-                                    <List.Item>
-                                        <Icon name='right triangle'/>
-                                        To increase resource mobilization, streamline budgeting and
-                                        expenditure
-                                        processes and strengthen accountability systems
-                                    </List.Item>
-                                    <List.Item>
-                                        <Icon name='right triangle'/>
-                                        To ensure availability and rational use of effective, safe and
-                                        affordable
-                                        health products and technologies.
-                                    </List.Item>
-                                </List.Content>
-                                <Button color='blue'>See more &raquo;</Button>
+            <Segment vertical style={{paddingTop: '5em '}}>
+                <Grid container stackable>
+                    <Grid.Row>
+                        <Grid.Column width={11}>
+                            <Header as='h3' style={{fontSize: '2em'}}>
+                                Summery Of Strategic Plan Objectives
+                            </Header>
+                            <p >
+                                The VCRH 2018-2022 strategic plan entailed objectives to improve service delivery to
+                                a status commensurate with a level 5 referral hospital. They were drawn from the WHO pillars
+                                of strengthening health systems. Consequently, the strategic objectives of the strategic
+                                plan
+                                were:
+                            </p>
+                            <List as='ul'  >
+                                <List.Item>
+                                    <Icon name='right triangle'/>
+                                    To have an effective and efficient hospital management, leadership
+                                    and
+                                    governance system.
+                                </List.Item>
+                                <List.Item>
+                                    <Icon name='right triangle'/>
+                                    To broaden the scope and enhance the quality of clinical
+                                    services.
+                                </List.Item>
+                                <List.Item>
+                                    <Icon name='right triangle'/>
+                                    To optimize health workforce size, skills, motivation and
+                                    distribution.
+                                </List.Item>
+                                <List.Item>
+                                    <Icon name='right triangle'/>
+                                    To have an efficient health management and information
+                                    system
+                                </List.Item>
+                                <List.Item>
+                                    <Icon name='right triangle'/>
+                                    To modernize and revolutionize health infrastructure.
+                                </List.Item>
+                                <List.Item>
+                                    <Icon name='right triangle'/>
+                                    To increase resource mobilization, streamline budgeting and
+                                    expenditure
+                                    processes and strengthen accountability systems
+                                </List.Item>
+                                <List.Item>
+                                    <Icon name='right triangle'/>
+                                    To ensure availability and rational use of effective, safe and
+                                    affordable
+                                    health products and technologies.
+                                </List.Item>
                             </List>
+                            <div style={{textAlign: 'center', padding: '2em'}}>
+                                <Button size='large' as={Link} to='/strategic' style={{fontSize: '1.33em'}}>See more </Button>
+                            </div>
                         </Grid.Column>
                         <Grid.Column floated='right' width={5}>
                             <Message info attached>
@@ -212,26 +209,36 @@ const HomepageLayout = () => (
                     </Grid.Row>
                 </Grid>
             </Segment>
-
-            <Segment placeholder >
-                <Grid columns={3} stackable textAlign='center'>
-                    <Divider vertical><Icon name='angle double right'/></Divider>
-                    <Grid.Row verticalAlign='middle'>
-                        <Grid.Column>
-                            <Header as='h3'>
+            <Segment vertical style={{padding: "0em"}}>
+                <Grid columns='equal' stackable celled container>
+                    <Grid.Row textAlign='center'>
+                        <Grid.Column style={{padding: '5em 0em'}}>
+                            <Header as='h3' style={{fontSize: '2em'}}>
                                 Our Mission
                             </Header>
-                            <List.Item>A facility of choice in health care provision</List.Item>
+                            <p style={{fontSize: '1.33em'}}>A facility of choice in health care provision</p>
                         </Grid.Column>
-
-                        <Grid.Column>
-                            <Header as='h3'>
+                        <Grid.Column style={{padding: '5em 0em'}}>
+                            <Header as='h3' style={{fontSize: '2em'}}>
                                 Our Vision
                             </Header>
-                            <List.Item>
-                                <b>To provide quality preventive, curative and rehabilitative health care
-                                    services.</b>
-                            </List.Item>
+                            <p style={{fontSize: '1.33em'}}>
+                                To provide quality preventive,<br/> curative and rehabilitative health care services.</p>
+                        </Grid.Column>
+                        <Grid.Column style={{padding: '5em 0em'}}>
+                            <Header as='h3' style={{fontSize: '2em'}}>
+                                Core Values
+                            </Header>
+                            <div style={{fontSize: '1.33em'}}>
+                                <List as='ul'>
+                                    <List.Item>Accountability</List.Item>
+                                    <List.Item>Commitment</List.Item>
+                                    <List.Item>Integrity</List.Item>
+                                    <List.Item>Teamwork</List.Item>
+                                    <List.Item>Innovation</List.Item>
+                                </List>
+
+                            </div>
                         </Grid.Column>
                     </Grid.Row>
                 </Grid>
