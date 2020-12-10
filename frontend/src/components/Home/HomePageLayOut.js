@@ -75,10 +75,10 @@ const HomepageLayout = () => (
                 <Grid container stackable>
                     <Grid.Row stretched>
                         <Grid.Column width={11}>
-                            <Header as='h3' style={{fontSize: '2em'}}>
+                            <Header as='h3' style={{fontSize: '1.88em'}}>
                                 Welcome !!!!
                             </Header>
-                            <p >Vihiga County Referral Hospital (VCRH) has offered services to the people
+                            <p style={{fontSize: '1.11em'}}>Vihiga County Referral Hospital (VCRH) has offered services to the people
                                 of Vihiga and its environs for the last 20 years. At inception it was referred to as the
                                 Vihiga
                                 District Hospital and later renamed following devolution of health services in Kenya. In
@@ -91,10 +91,10 @@ const HomepageLayout = () => (
                                 as a
                                 whole
                             </p>
-                            <Header as='h3' style={{fontSize: '2em'}}>
+                            <Header as='h3' style={{fontSize: '1.88em'}}>
                                 Health Care services
                             </Header>
-                            <p>
+                            <p style={{fontSize: '1.11em'}}>
                                 The County Government of Vihiga is committed to providing equitable, affordable and
                                 quality
                                 health
@@ -102,10 +102,10 @@ const HomepageLayout = () => (
                                 the
                                 Constitution 2010.
                             </p>
-                            <Header as='h3' style={{fontSize: '2em'}}>
+                            <Header as='h3' style={{fontSize: '1.88em'}}>
                                 How we achieved as a department
                             </Header>
-                            <p>
+                            <p style={{fontSize: '1.11em'}}>
                                 The department of health services developed a county
                                 health
                                 strategic plan for 2018-2022 which provides a road map of how the Health Department
@@ -147,10 +147,10 @@ const HomepageLayout = () => (
                 <Grid container stackable>
                     <Grid.Row>
                         <Grid.Column width={11}>
-                            <Header as='h3' style={{fontSize: '2em'}}>
+                            <Header as='h3' style={{fontSize: '1.88em'}}>
                                 Summery Of Strategic Plan Objectives
                             </Header>
-                            <p >
+                            <p style={{fontSize: '1.11em'}}>
                                 The VCRH 2018-2022 strategic plan entailed objectives to improve service delivery to
                                 a status commensurate with a level 5 referral hospital. They were drawn from the WHO pillars
                                 of strengthening health systems. Consequently, the strategic objectives of the strategic

@@ -13,19 +13,24 @@ import './styles.css'
 
 const DeskTopNav = ({setFixedNav, removeFixedNav, handleItemClick, active,}) => (
     <>
-        <Segment attached >
-            <Grid stackable container >
+        <Segment attached>
+            <Grid stackable container>
                 <Grid.Row verticalAlign='middle'>
-                    <Grid.Column width={3} >
+                    <Grid.Column width={3}>
                         <Logo/>
                     </Grid.Column>
-                    <Grid.Column width={13} >
-                        <Header  style={{color: '#df7a1f', fontSize: '2.5em'}}  >
+                    <Grid.Column width={13}>
+                        <Header style={{
+                            color: '#df7a1f',
+                            fontSize: '3.1em',
+                            fontWeight: '900'
+                            , textShadow: '2px 2px #15b000'
+                        }}>
                             Vihiga County Referral Hospital
-                            <Header.Subheader style={{fontSize:'0.5em'}}>
-                                 We take care of your precious health
-                            </Header.Subheader>
                         </Header>
+                        <div style={{fontSize: '1.44em'}}>
+                            We take care of your precious health
+                        </div>
                     </Grid.Column>
                 </Grid.Row>
             </Grid>
@@ -37,7 +42,7 @@ const DeskTopNav = ({setFixedNav, removeFixedNav, handleItemClick, active,}) => 
         >
             <Segment
                 inverted
-                style={{padding: '0',background:'rgb(44, 199,46)'}}
+                style={{padding: '0', background: 'rgb(44, 199,46)'}}
                 vertical
             >
                 <NavigationItems handleItemClick={handleItemClick} activeItem={active}/>
