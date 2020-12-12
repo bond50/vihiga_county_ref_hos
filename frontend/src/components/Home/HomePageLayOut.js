@@ -19,12 +19,12 @@ import image2 from '../../assets/1.jpg'
 const HomepageLayout = () => (
         <>
             <Segment style={{backgroundColor: '#ced3ce'}} attached>
-                <Grid stackable container>
-                    <Grid.Row stretched>
+                <Grid stackable container >
+                    <Grid.Row >
                         <Grid.Column width={11}>
                             <ImageGallaryComponent/>
                         </Grid.Column>
-                        <Grid.Column width={5}>
+                        <Grid.Column width={4} >
                             <Segment attached>
                                 <Divider
                                     as='h3'

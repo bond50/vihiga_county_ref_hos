@@ -1,10 +1,12 @@
 
-p.legend {
-
+.carousel .slide p{
+    background: none!important;
     font-size: 20px!important;
     font-weight: 900!important;
-    text-shadow: 3px 3px #15b000;;
     text-transform: uppercase;
-    animation-delay: 1s;
+    animation-delay: 5s;
     animation-duration: 2s;
+    color: black;
+
 }
+
