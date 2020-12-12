@@ -15,11 +15,12 @@ import {
 import image from '../../assets/plan/strategic.jpg'
 import ImageGallaryComponent from "./corousel";
 import {Link} from "react-router-dom";
-import image2 from '../../assets/1.jpg'
+import placeholder1 from '../../assets/resized/doc21.PNG'
+import placeholder2 from '../../assets/resized/doc22.PNG'
 
 const HomepageLayout = () => (
-        <Container>
-            <Segment vertical style={{paddingTop: '2em 0'}}>
+        <>
+            <Segment vertical style={{padding: '0.5em '}}>
                 <Grid stackable>
                     <Grid.Row>
                         <Grid.Column width={11}>
@@ -35,7 +36,7 @@ const HomepageLayout = () => (
                             <Embed
                                 id='E9a2xRUyfHw'
                                 autoPlay={false}
-                                placeholder={image2}
+                                placeholder={placeholder2}
                                 source='youtube'
                                 hd={true}
                                 iframe={{
@@ -48,8 +49,9 @@ const HomepageLayout = () => (
                             <br/>
                             <Embed
                                 id='RZg0zphSbQc'
-                                placeholder={image2}
+                                placeholder={placeholder1}
                                 source='youtube'
+                                color='red'
                                 hd={true}
                                 iframe={{
                                     allowFullScreen: true,
@@ -63,7 +65,7 @@ const HomepageLayout = () => (
                 </Grid>
             </Segment>
             <Segment vertical>
-                <Grid stackable verticalAlign='middle'>
+                <Grid stackable container  verticalAlign='middle'>
                     <Grid.Row>
                         <Grid.Column width={10}>
                             <Header as='h3'>
@@ -195,7 +197,7 @@ const HomepageLayout = () => (
                 </Grid>
             </Segment>
 
-            <Segment placeholder style={{margin: '2em '}}>
+            <Segment placeholder container style={{margin: '2em '}}>
                 <Grid columns={3} stackable textAlign='center'>
                     <Divider vertical><Icon name='angle double right'/></Divider>
                     <Grid.Row verticalAlign='middle'>
@@ -218,7 +220,7 @@ const HomepageLayout = () => (
                     </Grid.Row>
                 </Grid>
             </Segment>
-        </Container>
+        </>
     )
 ;
 
