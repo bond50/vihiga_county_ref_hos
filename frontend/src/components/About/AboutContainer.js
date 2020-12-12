@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container, Grid, Header, Segment} from "semantic-ui-react";
+import { Grid, Header, Segment} from "semantic-ui-react";
 
 const AboutContainer = ({children, title}) => <Segment style={{padding: '2em 0em'}} vertical>
         <Grid container>

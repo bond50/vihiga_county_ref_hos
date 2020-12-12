@@ -19,7 +19,7 @@ import image2 from '../../assets/1.jpg'
 
 const HomepageLayout = () => (
         <>
-            <Container style={{paddingTop: '5em'}}>
+            <Container style={{paddingTop: '1em'}}>
                 <Grid stackable>
                     <Grid.Row stretched>
                         <Grid.Column width={11}>

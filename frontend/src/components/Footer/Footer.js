@@ -1,13 +1,12 @@
 import React from 'react';
-import {Container, Grid, Header, List, Segment, Icon} from "semantic-ui-react";
+import { Grid, Header, List, Segment, Icon} from "semantic-ui-react";
 import {Link} from "react-router-dom";
 
 const Footer = () => (
     <Segment inverted vertical style={{padding: '5em 0em', backgroundColor: '#2cc72e'}} >
-        <Container>
-            <Grid divided inverted stackable>
+            <Grid divided inverted stackable container>
                 <Grid.Row >
-                    <Grid.Column width={6}>
+                    <Grid.Column width={5}>
                         <Header inverted as='h5' content='VIHIGA COUNTY REFERRAL HOSPITAL' icon='hospital '/>
                         <List  inverted as='ul'>
                             <List.Item >
@@ -26,7 +25,7 @@ const Footer = () => (
                             </List.Item>
                         </List>
                     </Grid.Column>
-                    <Grid.Column width={3}>
+                    <Grid.Column width={4}>
                         <Header inverted as='h5' content='SERVICES' icon='cogs'/>
                         <List  inverted as='ul'>
                             <List.Item as={Link} to='/services/departments/directorates'>Directorates</List.Item>
@@ -53,7 +52,7 @@ const Footer = () => (
                     </Grid.Column>
                 </Grid.Row>
             </Grid>
-        </Container>
+
     </Segment>
 );
 

@@ -14,47 +14,48 @@ import image11 from '../../assets/resized/11.JPG'
 
 import {Carousel} from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import {Image} from "semantic-ui-react";
 
 
 const Corousel = () => <Carousel autoPlay infiniteLoop showThumbs={false}>
     <>
-        <img src={image11} alt='jj'/>
+        <Image src={image11} alt='jj'/>
         <p className="legend">Legend 1</p>
     </>
     <>
-        <img src={image10} alt='kk'/>
+        <Image src={image10} alt='kk'/>
         <p className="legend">Legend 2</p>
     </>
     <>
-        <img src={image9} alt='mmm'/>
+        <Image src={image9} alt='mmm'/>
         <p className="legend">Legend 3</p>
     </>
     <>
-        <img src={image8} alt='mmm'/>
+        <Image src={image8} alt='mmm'/>
         <p className="legend">Legend 3</p>
     </>
     <>
-        <img src={image7} alt='mmm'/>
+        <Image src={image7} alt='mmm'/>
         <p className="legend">Legend 3</p>
     </>
     <>
-        <img src={image6} alt='mmm'/>
+        <Image src={image6} alt='mmm'/>
         <p className="legend">Legend 3</p>
     </>
     <>
-        <img src={image5} alt='mmm'/>
+        <Image src={image5} alt='mmm'/>
         <p className="legend">Legend 3</p>
     </>
      <>
-        <img src={image4} alt='mmm'/>
+        <Image src={image4} alt='mmm'/>
         <p className="legend">Legend 3</p>
     </>
     <>
-        <img src={image3} alt='mmm'/>
+        <Image src={image3} alt='mmm'/>
         <p className="legend">Legend 3</p>
     </>
     <>
-        <img src={image2} alt='mmm'/>
+        <Image src={image2} alt='mmm'/>
         <p className="legend">Legend 3</p>
     </>
 
