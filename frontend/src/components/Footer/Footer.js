@@ -6,12 +6,10 @@ const Footer = () => (
     <Segment inverted vertical style={{padding: '5em 0em', backgroundColor: '#2cc72e'}} >
         <Container>
             <Grid divided inverted stackable>
-                <Grid.Row>
+                <Grid.Row >
                     <Grid.Column width={6}>
-                        <Header inverted as='h4' content='VIHIGA COUNTY REFERRAL HOSPITAL'/>
-                        <p>Off Kisumu Road ,Mbale town
-                        Opp. District HeadQuarters</p>
-                        <List  inverted>
+                        <Header inverted as='h5' content='VIHIGA COUNTY REFERRAL HOSPITAL' icon='hospital '/>
+                        <List  inverted as='ul'>
                             <List.Item >
                                 <Icon name='book' style={{marginRight: "0.2em"}}/> P.O Box 1069 -50300 , Maragoli
                             </List.Item>
@@ -29,9 +27,9 @@ const Footer = () => (
                         </List>
                     </Grid.Column>
                     <Grid.Column width={3}>
-                        <Header inverted as='h4' content='SERVICES'/>
-                        <List  inverted>
-                            <List.Item as={Link} to='/services/departments/directorates'>All our Services</List.Item>
+                        <Header inverted as='h5' content='SERVICES' icon='cogs'/>
+                        <List  inverted as='ul'>
+                            <List.Item as={Link} to='/services/departments/directorates'>Directorates</List.Item>
                             <List.Item as={Link} to='/services/departments/laboratory'>Laboratory</List.Item>
                             <List.Item as={Link} to='/services/departments/pharmacy'>Pharmacy</List.Item>
                             <List.Item as={Link} to='/services/departments/radiology'>Radiology and imaging
@@ -40,17 +38,15 @@ const Footer = () => (
                         </List>
                     </Grid.Column>
                     <Grid.Column width={4}>
-                        <Header as='h4' inverted>
-                            CONTACT US
-                        </Header>
-                        <List  inverted>
+                        <Header inverted as='h5' content='CONTACT US' icon='address book'/>
+                        <List  inverted as='ul'>
                             <List.Item as={Link} to='/contact'>Drop Us a Message</List.Item>
                             <List.Item as={Link} to='/feedback/'>Feedback Form</List.Item>
                         </List>
                     </Grid.Column>
                     <Grid.Column width={3}>
-                        <Header inverted as='h4' content='EXTERNAL LINKS'/>
-                        <List link inverted>
+                        <Header inverted as='h5' content='EXTERNAL LINKS' icon='linkify'/>
+                        <List link inverted as='ul'>
                             <List.Item ><a href='https://vihiga.go.ke/'>Vihiga County Website</a> </List.Item>
                             <List.Item ><a href='https://health.go.ke/'>M.O.H website</a> </List.Item>
                         </List>

@@ -74,7 +74,7 @@ const ContactForm = ({
           placeholder="Type Your Message Here"
         />
         <Form.Group inline>
-          <Form.Button primary disabled={submitting}>
+          <Form.Button primary disabled={ submitting}>
             Submit
           </Form.Button>
           <Form.Button onClick={reset} disabled={pristine || submitting}>

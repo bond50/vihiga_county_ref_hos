@@ -15,63 +15,70 @@ import {
 import image from '../../assets/plan/strategic.jpg'
 import ImageGallaryComponent from "./corousel";
 import {Link} from "react-router-dom";
-import placeholder1 from '../../assets/resized/doc21.PNG'
-import placeholder2 from '../../assets/resized/doc22.PNG'
+import image2 from '../../assets/1.jpg'
 
 const HomepageLayout = () => (
         <>
-            <Segment vertical style={{padding: '0.5em '}}>
+            <Container style={{paddingTop: '5em'}}>
                 <Grid stackable>
-                    <Grid.Row>
+                    <Grid.Row stretched>
                         <Grid.Column width={11}>
                             <ImageGallaryComponent/>
                         </Grid.Column>
-                        <Grid.Column floated='right' width={5}>
-                            <Divider
-                                as='h3'
-                                className='header'
-                                horizontal>
-                                <Link to='#'>Documentaries</Link>
-                            </Divider>
-                            <Embed
-                                id='E9a2xRUyfHw'
-                                autoPlay={false}
-                                placeholder={placeholder2}
-                                source='youtube'
-                                hd={true}
-                                iframe={{
-                                    allowFullScreen: true,
-                                    style: {
-                                        padding: 10,
-                                    },
-                                }}
-                            />
-                            <br/>
-                            <Embed
-                                id='RZg0zphSbQc'
-                                placeholder={placeholder1}
-                                source='youtube'
-                                color='red'
-                                hd={true}
-                                iframe={{
-                                    allowFullScreen: true,
-                                    style: {
-                                        padding: 10,
-                                    },
-                                }}
-                            />
+                        <Grid.Column width={5}>
+                            <Segment attached>
+                                <Divider
+                                    as='h3'
+                                    style={{fontSize: '1.4em'}}
+                                    className='header'
+                                    horizontal>
+                                    <Link to='#'>Documentaries</Link>
+                                </Divider>
+                            </Segment>
+                            <Segment attached>
+                                <Embed
+                                    id='E9a2xRUyfHw'
+                                    autoPlay={false}
+                                    placeholder={image2}
+                                    active
+                                    source='youtube'
+                                    hd={true}
+                                    iframe={{
+                                        allowFullScreen: true,
+                                        style: {
+                                            padding: 10,
+                                        },
+                                    }}
+                                />
+                            </Segment>
+
+                            <Segment attached>
+                                <Embed
+                                    id='RZg0zphSbQc'
+                                    placeholder={image2}
+                                    source='youtube'
+                                    hd={true}
+                                    iframe={{
+                                        allowFullScreen: true,
+                                        style: {
+                                            padding: 10,
+                                        },
+                                    }}
+                                />
+                            </Segment>
+
                         </Grid.Column>
                     </Grid.Row>
                 </Grid>
-            </Segment>
-            <Segment vertical>
-                <Grid stackable container  verticalAlign='middle'>
-                    <Grid.Row>
-                        <Grid.Column width={10}>
-                            <Header as='h3'>
+            </Container>
+            <Segment vertical style={{paddingTop: '6em'}}>
+                <Grid container stackable>
+                    <Grid.Row stretched>
+                        <Grid.Column width={11}>
+                            <Header as='h3' style={{fontSize: '1.88em'}}>
                                 Welcome !!!!
                             </Header>
-                            <List.Item>Vihiga County Referral Hospital (VCRH) has offered services to the people
+                            <p style={{fontSize: '1.11em'}}>Vihiga County Referral Hospital (VCRH) has offered services to the people
                                 of Vihiga and its environs for the last 20 years. At inception it was referred to as the
                                 Vihiga
                                 District Hospital and later renamed following devolution of health services in Kenya. In
@@ -82,45 +89,46 @@ const HomepageLayout = () => (
                                 need to upgrade the quality and scope of service offered to clients at the facility and
                                 region
                                 as a
-                                whole</List.Item>
-                            <Header as='h3'>
+                                whole
+                            </p>
+                            <Header as='h3' style={{fontSize: '1.88em'}}>
                                 Health Care services
                             </Header>
-                            <List.Item>
+                            <p style={{fontSize: '1.11em'}}>
                                 The County Government of Vihiga is committed to providing equitable, affordable and
                                 quality
                                 health
                                 care of the highest standard to all its residents as stipulated in the Bill of Rights in
                                 the
                                 Constitution 2010.
-                            </List.Item>
-                            <Header as='h3'>
+                            </p>
+                            <Header as='h3' style={{fontSize: '1.88em'}}>
                                 How we achieved as a department
                             </Header>
-                            <List.Item>
+                            <p style={{fontSize: '1.11em'}}>
                                 The department of health services developed a county
                                 health
                                 strategic plan for 2018-2022 which provides a road map of how the Health Department
                                 intends
                                 to
-                                provide Health Services in an enabling environment.</List.Item>
+                                provide Health Services in an enabling environment.</p>
                         </Grid.Column>
-                        <Grid.Column floated='right' width={5}>
-                            <Divider
-                                as='h3'
-                                className='header'
-                                horizontal
-                                style={{margin: '1em 0em'}}
-                            >
-                                <Link to='#'>News and Updates</Link>
-                            </Divider>
-                            <Message attached>
-                                <Message.Header>
-                                    Our Accident And Emergency Unit Is Now Fully Functional
-                                </Message.Header>
-                                <Message.List>ICU is complete and will be Launched Soon .</Message.List>
-                                <Message.List>Please Subscribe to to our newsletter to stay Updated</Message.List>
-                            </Message>
+                        <Grid.Column width={5}>
+                            <Segment attached>
+                                <Divider
+                                    as='h3'
+                                    className='header'
+                                    horizontal
+                                    style={{margin: '1em 0em'}}
+                                >
+                                    <Link to='#'>News and Updates</Link>
+                                </Divider>
+                            </Segment>
+                            <Message segment
+                                     attached
+                                     header="Our Accident And Emergency Unit Is Now Fully Functional"
+                                     content="ICU is complete and will be Launched Soon ."
+                            />
                             <Message attached>
                                 <Message.Header>Changes in Service</Message.Header>
                                 <Message.List>
@@ -132,60 +140,65 @@ const HomepageLayout = () => (
                                 </Message.List>
                             </Message>
                         </Grid.Column>
-                        <Grid.Column width={11} style={{padding:'2em 0'}}>
-                            <Message warning>
-                                <Message.Header as='h3'>
-                                    Summery Of Strategic Plan Objectives
-                                </Message.Header>
-                                <p>
-                                    The VCRH 2018-2022 strategic plan entailed objectives to improve service delivery to a
-                                    status
-                                    commensurate with a level 5 referral hospital. They were drawn from the WHO pillars of
-                                    strengthening health systems. Consequently, the strategic objectives of the strategic
-                                    plan
-                                    were:</p>
-                                <Message.Content>
-                                    <Message.List>
-                                        <Icon name='right triangle'/>
-                                        To have an effective and efficient hospital management, leadership
-                                        and
-                                        governance system.
-                                    </Message.List>
-                                    <Message.List>
-                                        <Icon name='right triangle'/>
-                                        To broaden the scope and enhance the quality of clinical
-                                        services.
-                                    </Message.List>
-                                    <Message.List>
-                                        <Icon name='right triangle'/>
-                                        To optimize health workforce size, skills, motivation and
-                                        distribution.
-                                    </Message.List>
-                                    <Message.List>
-                                        <Icon name='right triangle'/>
-                                        To have an efficient health management and information
-                                        system
-                                    </Message.List>
-                                    <Message.List>
-                                        <Icon name='right triangle'/>
-                                        To modernize and revolutionize health infrastructure.
-                                    </Message.List>
-                                    <Message.List>
-                                        <Icon name='right triangle'/>
-                                        To increase resource mobilization, streamline budgeting and
-                                        expenditure
-                                        processes and strengthen accountability systems
-                                    </Message.List>
-                                    <Message.List>
-                                        <Icon name='right triangle'/>
-                                        To ensure availability and rational use of effective, safe and
-                                        affordable
-                                        health products and technologies.
-                                    </Message.List>
-                                </Message.Content>
-                                <br/>
-                                <Button color='blue'>See more &raquo;</Button>
-                            </Message>
+                    </Grid.Row>
+                </Grid>
+            </Segment>
+            <Segment vertical style={{paddingTop: '5em '}}>
+                <Grid container stackable>
+                    <Grid.Row>
+                        <Grid.Column width={11}>
+                            <Header as='h3' style={{fontSize: '1.88em'}}>
+                                Summery Of Strategic Plan Objectives
+                            </Header>
+                            <p style={{fontSize: '1.11em'}}>
+                                The VCRH 2018-2022 strategic plan entailed objectives to improve service delivery to
+                                a status commensurate with a level 5 referral hospital. They were drawn from the WHO pillars
+                                of strengthening health systems. Consequently, the strategic objectives of the strategic
+                                plan
+                                were:
+                            </p>
+                            <List as='ul'  >
+                                <List.Item>
+                                    <Icon name='right triangle'/>
+                                    To have an effective and efficient hospital management, leadership
+                                    and
+                                    governance system.
+                                </List.Item>
+                                <List.Item>
+                                    <Icon name='right triangle'/>
+                                    To broaden the scope and enhance the quality of clinical
+                                    services.
+                                </List.Item>
+                                <List.Item>
+                                    <Icon name='right triangle'/>
+                                    To optimize health workforce size, skills, motivation and
+                                    distribution.
+                                </List.Item>
+                                <List.Item>
+                                    <Icon name='right triangle'/>
+                                    To have an efficient health management and information
+                                    system
+                                </List.Item>
+                                <List.Item>
+                                    <Icon name='right triangle'/>
+                                    To modernize and revolutionize health infrastructure.
+                                </List.Item>
+                                <List.Item>
+                                    <Icon name='right triangle'/>
+                                    To increase resource mobilization, streamline budgeting and
+                                    expenditure
+                                    processes and strengthen accountability systems
+                                </List.Item>
+                                <List.Item>
+                                    <Icon name='right triangle'/>
+                                    To ensure availability and rational use of effective, safe and
+                                    affordable
+                                    health products and technologies.
+                                </List.Item>
+                            </List>
+                            <div style={{textAlign: 'center', padding: '2em'}}>
+                                <Button size='large' as={Link} to='/strategic' style={{fontSize: '1.33em'}}>See more </Button>
+                            </div>
                         </Grid.Column>
                         <Grid.Column floated='right' width={5}>
                             <Message info attached>
@@ -196,26 +209,36 @@ const HomepageLayout = () => (
                     </Grid.Row>
                 </Grid>
             </Segment>
-
-            <Segment placeholder container style={{margin: '2em '}}>
-                <Grid columns={3} stackable textAlign='center'>
-                    <Divider vertical><Icon name='angle double right'/></Divider>
-                    <Grid.Row verticalAlign='middle'>
-                        <Grid.Column>
-                            <Header as='h3'>
+            <Segment vertical style={{padding: "0em"}}>
+                <Grid columns='equal' stackable celled container>
+                    <Grid.Row textAlign='center'>
+                        <Grid.Column style={{padding: '5em 0em'}}>
+                            <Header as='h3' style={{fontSize: '1.88em'}}>
                                 Our Mission
                             </Header>
-                            <List.Item>A facility of choice in health care provision</List.Item>
+                            <p style={{fontSize: '1.11em'}}>A facility of choice in health care provision</p>
                         </Grid.Column>
-
-                        <Grid.Column>
-                            <Header as='h3'>
+                        <Grid.Column style={{padding: '5em 0em'}}>
+                            <Header as='h3' style={{fontSize: '1.88em'}}>
                                 Our Vision
                             </Header>
-                            <List.Item>
-                                <b>To provide quality preventive, curative and rehabilitative health care
-                                    services.</b>
-                            </List.Item>
+                            <p style={{fontSize: '1.11em'}}>
+                                To provide quality preventive,<br/> curative and rehabilitative health care services.</p>
+                        </Grid.Column>
+                        <Grid.Column style={{padding: '2em 0em'}}>
+                            <Header as='h3' style={{fontSize: '1.88em'}}>
+                                Core Values
+                            </Header>
+                            <div style={{fontSize: '1.11em'}}>
+                                <List as='ul'>
+                                    <List.Item>Accountability</List.Item>
+                                    <List.Item>Commitment</List.Item>
+                                    <List.Item>Integrity</List.Item>
+                                    <List.Item>Teamwork</List.Item>
+                                    <List.Item>Innovation</List.Item>
+                                </List>
+
+                            </div>
                         </Grid.Column>
                     </Grid.Row>
                 </Grid>

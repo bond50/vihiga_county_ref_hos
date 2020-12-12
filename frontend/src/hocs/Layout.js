@@ -10,7 +10,6 @@ const Layout = ({children}) => {
         <MediaContextProvider>
             <NavBar>
                    {children}
-
                  <Footer/>
             </NavBar>
         </MediaContextProvider>
