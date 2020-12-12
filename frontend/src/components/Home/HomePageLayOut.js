@@ -1,7 +1,6 @@
 import React from 'react';
 import {
     Button,
-    Container,
     Divider,
     Grid,
     Header,
@@ -19,8 +18,8 @@ import image2 from '../../assets/1.jpg'
 
 const HomepageLayout = () => (
         <>
-            <Container style={{paddingTop: '5em'}}>
-                <Grid stackable>
+            <Segment  style={{backgroundColor:'#ced3ce' }} attached>
+                <Grid stackable container>
                     <Grid.Row stretched>
                         <Grid.Column width={11}>
                             <ImageGallaryComponent/>
@@ -70,8 +69,8 @@ const HomepageLayout = () => (
                         </Grid.Column>
                     </Grid.Row>
                 </Grid>
-            </Container>
-            <Segment vertical style={{paddingTop: '6em'}}>
+            </Segment>
+            <Segment vertical style={{paddingTop: '3em'}}>
                 <Grid container stackable>
                     <Grid.Row stretched>
                         <Grid.Column width={11}>
