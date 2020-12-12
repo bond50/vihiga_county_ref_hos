@@ -1,7 +1,6 @@
 import React from 'react';
 import {
     Button,
-    Container,
     Divider,
     Grid,
     Header,
@@ -19,8 +18,8 @@ import image2 from '../../assets/1.jpg'
 
 const HomepageLayout = () => (
         <>
-            <Container style={{paddingTop: '1em'}}>
-                <Grid stackable>
+            <Segment style={{backgroundColor: '#ced3ce'}} attached>
+                <Grid stackable container>
                     <Grid.Row stretched>
                         <Grid.Column width={11}>
                             <ImageGallaryComponent/>
@@ -39,8 +38,8 @@ const HomepageLayout = () => (
                                 <Embed
                                     id='E9a2xRUyfHw'
                                     autoPlay={false}
+                                    color='youtube'
                                     placeholder={image2}
-                                    active
                                     source='youtube'
                                     hd={true}
                                     iframe={{
@@ -70,15 +69,16 @@ const HomepageLayout = () => (
                         </Grid.Column>
                     </Grid.Row>
                 </Grid>
-            </Container>
-            <Segment vertical style={{paddingTop: '6em'}}>
+            </Segment>
+            <Segment vertical style={{paddingTop: '3em'}}>
                 <Grid container stackable>
                     <Grid.Row stretched>
                         <Grid.Column width={11}>
                             <Header as='h3' style={{fontSize: '1.88em'}}>
                                 Welcome !!!!
                             </Header>
-                            <p style={{fontSize: '1.11em'}}>Vihiga County Referral Hospital (VCRH) has offered services to the people
+                            <p style={{fontSize: '1.11em'}}>Vihiga County Referral Hospital (VCRH) has offered services to
+                                the people
                                 of Vihiga and its environs for the last 20 years. At inception it was referred to as the
                                 Vihiga
                                 District Hospital and later renamed following devolution of health services in Kenya. In
@@ -143,7 +143,7 @@ const HomepageLayout = () => (
                     </Grid.Row>
                 </Grid>
             </Segment>
-            <Segment vertical style={{paddingTop: '5em '}}>
+            <Segment vertical style={{paddingTop: '3em '}}>
                 <Grid container stackable>
                     <Grid.Row>
                         <Grid.Column width={11}>
@@ -157,7 +157,7 @@ const HomepageLayout = () => (
                                 plan
                                 were:
                             </p>
-                            <List as='ul'  >
+                            <List as='ul'>
                                 <List.Item>
                                     <Icon name='right triangle'/>
                                     To have an effective and efficient hospital management, leadership
@@ -197,7 +197,8 @@ const HomepageLayout = () => (
                                 </List.Item>
                             </List>
                             <div style={{textAlign: 'center', padding: '2em'}}>
-                                <Button size='large' as={Link} to='/strategic' style={{fontSize: '1.33em'}}>See more </Button>
+                                <Button size='large' as={Link} to='/strategic' style={{fontSize: '1.33em'}}>See
+                                    more </Button>
                             </div>
                         </Grid.Column>
                         <Grid.Column floated='right' width={5}>
@@ -209,24 +210,24 @@ const HomepageLayout = () => (
                     </Grid.Row>
                 </Grid>
             </Segment>
-            <Segment vertical style={{padding: "0em"}}>
-                <Grid columns='equal' stackable celled container>
+            <Segment vertical style={{padding: "0em"}} celled  attached>
+                <Grid columns='equal' stackable  container>
                     <Grid.Row textAlign='center'>
-                        <Grid.Column style={{padding: '5em 0em'}}>
-                            <Header as='h3' style={{fontSize: '1.88em'}}>
+                        <Grid.Column style={{padding: '2em 0em'}}>
+                            <Header as='h3' style={{fontSize: '1.88em'}} >
                                 Our Mission
                             </Header>
                             <p style={{fontSize: '1.11em'}}>A facility of choice in health care provision</p>
                         </Grid.Column>
-                        <Grid.Column style={{padding: '5em 0em'}}>
-                            <Header as='h3' style={{fontSize: '1.88em'}}>
+                        <Grid.Column style={{padding: '2em 0em'}}>
+                            <Header as='h3' style={{fontSize: '1.88em'}} >
                                 Our Vision
                             </Header>
                             <p style={{fontSize: '1.11em'}}>
                                 To provide quality preventive,<br/> curative and rehabilitative health care services.</p>
                         </Grid.Column>
                         <Grid.Column style={{padding: '2em 0em'}}>
-                            <Header as='h3' style={{fontSize: '1.88em'}}>
+                            <Header as='h3' style={{fontSize: '1.88em'}} inverted>
                                 Core Values
                             </Header>
                             <div style={{fontSize: '1.11em'}}>
