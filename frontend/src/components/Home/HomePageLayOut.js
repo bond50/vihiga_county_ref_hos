@@ -4,12 +4,12 @@ import {
     Divider,
     Grid,
     Header,
-    Icon,
     Embed,
     Image,
     List,
     Message,
     Segment,
+    Label
 } from 'semantic-ui-react';
 import image from '../../assets/plan/strategic.jpg'
 import ImageGallaryComponent from "./corousel";
@@ -18,13 +18,16 @@ import image2 from '../../assets/1.jpg'
 
 const HomepageLayout = () => (
         <>
-            <Segment style={{backgroundColor: '#ced3ce'}} attached>
-                <Grid stackable container >
-                    <Grid.Row >
-                        <Grid.Column width={11}>
+            <Segment style={{backgroundColor: '#ced3ce', padding: '0  '}} attached>
+                <Grid stackable>
+                    <Grid.Row>
+                        <Grid.Column width={1}>
+                            <Label  color='yellow'>Feedback</Label>
+                        </Grid.Column>
+                        <Grid.Column width={9}>
                             <ImageGallaryComponent/>
                         </Grid.Column>
-                        <Grid.Column width={4} >
+                        <Grid.Column width={4}>
                             <Segment attached>
                                 <Divider
                                     as='h3'
@@ -38,7 +41,6 @@ const HomepageLayout = () => (
                                 <Embed
                                     id='E9a2xRUyfHw'
                                     autoPlay={false}
-                                    color='youtube'
                                     placeholder={image2}
                                     source='youtube'
                                     hd={true}
@@ -157,40 +159,33 @@ const HomepageLayout = () => (
                                 plan
                                 were:
                             </p>
-                            <List as='ul'>
-                                <List.Item>
-                                    <Icon name='right triangle'/>
+                            <List as='ol'>
+                                <List.Item as='li'>
                                     To have an effective and efficient hospital management, leadership
                                     and
                                     governance system.
                                 </List.Item>
-                                <List.Item>
-                                    <Icon name='right triangle'/>
+                                <List.Item as='li'>
                                     To broaden the scope and enhance the quality of clinical
                                     services.
                                 </List.Item>
-                                <List.Item>
-                                    <Icon name='right triangle'/>
+                                <List.Item as='li'>
                                     To optimize health workforce size, skills, motivation and
                                     distribution.
                                 </List.Item>
-                                <List.Item>
-                                    <Icon name='right triangle'/>
+                                <List.Item as='li'>
                                     To have an efficient health management and information
                                     system
                                 </List.Item>
-                                <List.Item>
-                                    <Icon name='right triangle'/>
+                                <List.Item as='li'>
                                     To modernize and revolutionize health infrastructure.
                                 </List.Item>
-                                <List.Item>
-                                    <Icon name='right triangle'/>
+                                <List.Item as='li'>
                                     To increase resource mobilization, streamline budgeting and
                                     expenditure
                                     processes and strengthen accountability systems
                                 </List.Item>
-                                <List.Item>
-                                    <Icon name='right triangle'/>
+                                <List.Item as='li'>
                                     To ensure availability and rational use of effective, safe and
                                     affordable
                                     health products and technologies.
@@ -210,24 +205,24 @@ const HomepageLayout = () => (
                     </Grid.Row>
                 </Grid>
             </Segment>
-            <Segment vertical style={{padding: "0em"}} celled  attached>
-                <Grid columns='equal' stackable  container>
+            <Segment vertical style={{padding: "0em"}} celled attached>
+                <Grid columns='equal' stackable container>
                     <Grid.Row textAlign='center'>
                         <Grid.Column style={{padding: '2em 0em'}}>
-                            <Header as='h3' style={{fontSize: '1.88em'}} >
+                            <Header as='h3' style={{fontSize: '1.88em'}}>
                                 Our Mission
                             </Header>
                             <p style={{fontSize: '1.11em'}}>A facility of choice in health care provision</p>
                         </Grid.Column>
                         <Grid.Column style={{padding: '2em 0em'}}>
-                            <Header as='h3' style={{fontSize: '1.88em'}} >
+                            <Header as='h3' style={{fontSize: '1.88em'}}>
                                 Our Vision
                             </Header>
                             <p style={{fontSize: '1.11em'}}>
                                 To provide quality preventive,<br/> curative and rehabilitative health care services.</p>
                         </Grid.Column>
                         <Grid.Column style={{padding: '2em 0em'}}>
-                            <Header as='h3' style={{fontSize: '1.88em'}} inverted>
+                            <Header as='h3' style={{fontSize: '1.88em'}}>
                                 Core Values
                             </Header>
                             <div style={{fontSize: '1.11em'}}>

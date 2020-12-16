@@ -4,6 +4,7 @@ import DeskTopNav from "./desktop/DeskTopNav";
 import {Sidebar} from "semantic-ui-react";
 import MobileNav from "./mobile/MobileNav";
 
+
 const NavBar = ({children}) => {
     const [active, setActive] = useState({active: 'home'});
     const handleItemClick = (e, {name}) => setActive({...active, active: name})

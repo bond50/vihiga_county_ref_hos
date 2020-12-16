@@ -11,7 +11,8 @@ import Logo from "./navigationItems/logo";
 import './styles.css'
 
 
-const DeskTopNav = ({setFixedNav, removeFixedNav, handleItemClick, active,}) => (
+
+const DeskTopNav = ({setFixedNav, removeFixedNav, handleItemClick, active}) => (
     <>
         <Segment attached>
             <Grid stackable container>
@@ -22,9 +23,9 @@ const DeskTopNav = ({setFixedNav, removeFixedNav, handleItemClick, active,}) => 
                     <Grid.Column width={13}>
                         <Header style={{
                             color: '#df7a1f',
-                            fontSize: '3.1em',
+                            fontSize: '2.9em',
                             fontWeight: '900'
-                            , textShadow: '2px 2px #15b000'
+                            , textShadow: '1px 1px #15b000'
                         }}>
                             Vihiga County Referral Hospital
                         </Header>
@@ -45,10 +46,12 @@ const DeskTopNav = ({setFixedNav, removeFixedNav, handleItemClick, active,}) => 
                 style={{padding: '0', background: 'rgb(44, 199,46)'}}
                 vertical
             >
-                <NavigationItems handleItemClick={handleItemClick} activeItem={active}/>
+                <NavigationItems
+                    handleItemClick={handleItemClick}
+                    activeItem={active}/>
             </Segment>
-        </Visibility>
 
+        </Visibility>
     </>
 );
 

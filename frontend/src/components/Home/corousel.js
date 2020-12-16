@@ -9,22 +9,24 @@ import {Carousel} from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 
+
+
 const Slider = () => <Carousel autoPlay infiniteLoop showThumbs={false}>
 
     <>
-        <img src={img1} alt='mmm'/>
-        <p className="legend">Legend 3</p>
+        <img src={img1} alt='mmm' style={{width:'100%',maxHeight:'100%'}}/>
+        <p className="legend ">Legend 3</p>
     </>
     <>
-        <img src={img2} alt='mmm'/>
-        <p className="legend">Legend 3</p>
+     <img src={img2} alt='mmm' style={{width:'100%',maxHeight:'100%'}}/>
+        <p className="legend ">Legend 3</p>
     </>
     <>
-        <img src={img3} alt='mmm'/>
+        <img src={img3} alt='mmm' style={{width:'100%',maxHeight:'100%'}}/>
         <p className="legend">Legend 3</p>
     </>
      <>
-        <img src={img4} alt='mmm'/>
+     <img src={img4} alt='mmm' style={{width:'100%',maxHeight:'100%'}}/>
         <p className="legend">Legend 3</p>
     </>
 
