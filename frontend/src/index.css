@@ -1,1 +1,30 @@
+body {
+    font-family: 'Open Sans', sans-serif !important;
+}
 
+.ui.vertical.segment {
+    border: none !important;
+}
+.ui.menu .item{
+    text-transform: uppercase!important;
+
+}
+/*.ui.dropdown .menu{*/
+/*    background-color: rgb(0, 147, 220)!important;*/
+/*}*/
+
+.ui.menu .ui.dropdown .menu>.item{
+    font-variant: small-caps!important;
+}
+.ui.secondary.pointing.menu .active.item {
+    border-color: rgb(0, 147, 220) !important;
+
+}
+.ui.header{
+    font-variant: small-caps;
+}
+
+.welcomeHeader {
+    font-size: 2.5em!important;
+    font-variant: small-caps;
+}

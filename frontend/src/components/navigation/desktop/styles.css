@@ -1,5 +1,12 @@
 
 .ui.menu .item{
-    text-transform: uppercase!important;
+    text-transform: capitalize!important;
 }
 
+.nav-image{
+    background-image: url(imange.png);
+    height: 351px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

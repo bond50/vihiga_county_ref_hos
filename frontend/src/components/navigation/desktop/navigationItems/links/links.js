@@ -19,7 +19,7 @@ export const training = (clicked) => (
 
 export const services = (clicked) => (
     <>
-        <Dropdown.Item text='Directorates' as={Link} to='/services/departments/directorates' onClick={clicked}/>
+        <Dropdown.Item text='Directorates' as={Link} to='/services/departments/directorates' onClick={clicked} />
         <Dropdown.Item text='Pharmacy' as={Link} to='/services/departments/pharmacy' onClick={clicked}/>
         <Dropdown.Item text='Laboratory' as={Link} to='/services/departments/laboratory' onClick={clicked}/>
         <Dropdown.Item text='Radiology/Xray' as={Link} to='/services/departments/radiology' onClick={clicked}/>
@@ -37,29 +37,14 @@ export const about = (clicked) => (
         <Dropdown.Item text='Our Mission' as={Link} to='/about/mission' onClick={clicked}/>
         <Dropdown.Item text='Our Vision' as={Link} to='/about/vision' onClick={clicked}/>
         <Dropdown.Item text='Our Core Values' as={Link} to='/about/core-values' onClick={clicked}/>
-        <Dropdown.Item>
-            <Dropdown floating text='Management' pointing='left' fluid>
-                <Dropdown.Menu>
-                    <Dropdown.Item text='Board' as={Link} to='/about/management/board' onClick={clicked}/>
-                    <Dropdown.Item text='Organogram' as={Link} to='/about/management/organogram' onClick={clicked}/>
-                </Dropdown.Menu>
-            </Dropdown>
-        </Dropdown.Item>
-
+        <Dropdown.Item text='Our Board Members' as={Link} to='/about/management/board' onClick={clicked}/>
+        <Dropdown.Item text='Our Organogram' as={Link} to='/about/management/organogram' onClick={clicked}/>
         <Dropdown.Item text='Our Role' as={Link} to='/about/roles' onClick={clicked}/>
         <Dropdown.Item text='Our Plan' as={Link} to='/about/plan' onClick={clicked}/>
         <Dropdown.Item text='Our Health Goals' as={Link} to='/about/health-goals' onClick={clicked}/>
-        <Dropdown.Item text='Neighboring Facilities' as={Link} to='/about/neighbor' onClick={clicked}/>
-        <Dropdown.Item>
-            <Dropdown text='Projects' fluid pointing='left'>
-                <Dropdown.Menu>
-                    <Dropdown.Item text='Projects' as={Link} to='/about/projects/project' onClick={clicked}/>
-                    <Dropdown.Item text='Partners' as={Link} to='/about/projects/partners' onClick={clicked}/>
-                </Dropdown.Menu>
-            </Dropdown>
-        </Dropdown.Item>
-
-
+        <Dropdown.Item text='Our Neighboring Facilities' as={Link} to='/about/neighbor' onClick={clicked}/>
+        <Dropdown.Item text='Our Projects' as={Link} to='/about/projects/project' onClick={clicked}/>
+        <Dropdown.Item text='Our Partners' as={Link} to='/about/projects/partners' onClick={clicked}/>
     </>
 
 )

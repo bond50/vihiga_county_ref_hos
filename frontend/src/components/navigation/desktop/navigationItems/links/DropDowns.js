@@ -1,11 +1,12 @@
 import React from 'react';
 import {Dropdown} from "semantic-ui-react";
 
-const DropDowns = (props) => {
+const DropDowns = ({name,activeItem,handleItemClick,children}) => {
     return (
-        <Dropdown item pointing className='link item' text={props.text} {...props} >
+        <Dropdown item  name={name} activeItem={activeItem}
+                  onClick={handleItemClick}>
             <Dropdown.Menu>
-                {props.children}
+                {children}
             </Dropdown.Menu>
         </Dropdown>
     );

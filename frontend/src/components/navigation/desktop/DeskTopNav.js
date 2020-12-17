@@ -1,51 +1,43 @@
 import React from 'react';
-import {Segment, Visibility, Header, Grid} from 'semantic-ui-react';
+import {Segment, Visibility,  Grid,  Icon} from 'semantic-ui-react';
 import {connect} from 'react-redux'
 import {removeFixedNav, setFixedNav} from "../../../store/actions/nav";
-import {withRouter} from "react-router-dom";
-import './styles.css'
-
-
+import { withRouter} from "react-router-dom";
 import NavigationItems from "./navigationItems/NavigationItems";
-import Logo from "./navigationItems/logo";
 import './styles.css'
-
 
 
 const DeskTopNav = ({setFixedNav, removeFixedNav, handleItemClick, active}) => (
     <>
-        <Segment attached>
-            <Grid stackable container>
-                <Grid.Row verticalAlign='middle'>
-                    <Grid.Column width={3}>
-                        <Logo/>
-                    </Grid.Column>
-                    <Grid.Column width={13}>
-                        <Header style={{
-                            color: '#df7a1f',
-                            fontSize: '2.9em',
-                            fontWeight: '900'
-                            , textShadow: '1px 1px #15b000'
-                        }}>
-                            Vihiga County Referral Hospital
-                        </Header>
-                        <div style={{fontSize: '1.44em'}}>
-                            We take care of your precious health
-                        </div>
-                    </Grid.Column>
-                </Grid.Row>
-            </Grid>
-        </Segment>
         <Visibility
             once={false}
             onBottomPassed={() => (setFixedNav())}
             onBottomPassedReverse={() => (removeFixedNav())}
         >
-            <Segment
-                inverted
-                style={{padding: '0', background: 'rgb(44, 199,46)'}}
-                vertical
-            >
+            <Segment vertical style={{background: "#2CC73E"}} inverted>
+                <Grid container>
+                    <Grid.Row>
+                        <Grid.Column width={5}>
+                            VIHIGA COUNTY REFERRAL HOSPITAL
+                        </Grid.Column>
+                        <Grid.Column floated='right' width={2}>
+                            <a href='https://www.facebook.com/groups/215961735537277/'>
+                                <Icon name='facebook' inverted/>
+                            </a>
+                            <a href='https://www.twitter.com/'>
+                                <Icon name='twitter' inverted/>
+                            </a>
+                            <a href='https://www.youtube.com/'>
+                                <Icon name='youtube' inverted/>
+                            </a>
+                            <a href='https://www.instagram.com/'>
+                                <Icon name='instagram' inverted/>
+                            </a>
+                        </Grid.Column>
+                    </Grid.Row>
+                </Grid>
+            </Segment>
+            <Segment vertical style={{padding: "1em 0em"}}>
                 <NavigationItems
                     handleItemClick={handleItemClick}
                     activeItem={active}/>

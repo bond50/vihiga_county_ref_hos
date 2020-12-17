@@ -1,6 +1,15 @@
 import React, {Component} from 'react'
-import {Accordion, Form, Menu, Dropdown} from 'semantic-ui-react'
-import {about, contact, covid, media, services, tenders, training} from "../../desktop/navigationItems/links/links";
+import {Accordion, Menu} from 'semantic-ui-react'
+import {
+    about,
+    contact,
+    covid,
+    logo,
+    media,
+    services,
+    tenders,
+    training
+} from "../../desktop/navigationItems/links/links";
 
 
 export default class AccordionExampleMenu extends Component {
@@ -9,16 +18,17 @@ export default class AccordionExampleMenu extends Component {
         const {index} = titleProps
         const {activeIndex} = this.state
         const newIndex = activeIndex === index ? -1 : index
-
         this.setState({activeIndex: newIndex})
     }
 
     render() {
         const {activeIndex} = this.state
+        const {handleSidebarHide} = this.props
 
         return (
-            <Accordion as={Menu} vertical fluid secondary inverted>
-                <Menu.Item>
+            <Accordion as={Menu} vertical fluid secondary inverted size='huge'>
+                {logo(handleSidebarHide)}
+                <Menu.Item as='a'>
                     <Accordion.Title
                         active={activeIndex === 0}
                         content='About Us'
@@ -26,38 +36,42 @@ export default class AccordionExampleMenu extends Component {
                         onClick={this.handleClick}
                     />
                     <Accordion.Content active={activeIndex === 0}>
-                           <Dropdown.Menu>
-                               {about()}
-                           </Dropdown.Menu>
+                        <Menu.Menu>
+                            {about(handleSidebarHide)}
+                        </Menu.Menu>
                     </Accordion.Content>
                 </Menu.Item>
-                <Menu.Item>
+                <Menu.Item as='a'>
                     <Accordion.Title
                         active={activeIndex === 1}
                         content='Services'
                         index={1}
                         onClick={this.handleClick}
                     />
-                    <Accordion.Content active={activeIndex === 1} content={services()}/>
+                    <Accordion.Content active={activeIndex === 1} content={services(handleSidebarHide)}/>
                 </Menu.Item>
-                <Menu.Item>
+                <Menu.Item as='a'>
                     <Accordion.Title
                         active={activeIndex === 2}
                         content='Media'
                         index={2}
                         onClick={this.handleClick}
                     />
-                    <Accordion.Content active={activeIndex === 2} content={media()}/>
+                    <Accordion.Content active={activeIndex === 2} content={media(handleSidebarHide)}/>
                 </Menu.Item>
+                {contact(handleSidebarHide)}
+                {tenders(handleSidebarHide)}
+                {training(handleSidebarHide)}
 
-                 <Menu.Item>
+                <Menu.Item as='a'>
                     <Accordion.Title
                         active={activeIndex === 3}
                         content='Covid'
                         index={3}
                         onClick={this.handleClick}
+                        inverted
                     />
-                    <Accordion.Content active={activeIndex === 3} content={covid()}/>
+                    <Accordion.Content active={activeIndex === 3} content={covid(handleSidebarHide)}/>
                 </Menu.Item>
             </Accordion>
         )

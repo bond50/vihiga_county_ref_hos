@@ -1,7 +1,6 @@
 import React from 'react';
-import {Sidebar, Menu, Container} from "semantic-ui-react";
+import {Sidebar, Menu,} from "semantic-ui-react";
 
-import {contact, logo, media, tenders, training} from "../desktop/navigationItems/links/links";
 
 import MyAccordion from "./Accordion/Accordion";
 
@@ -14,13 +13,13 @@ const Pushable = ({handleSidebarHide, sidebarOpened}) => {
             onHide={handleSidebarHide}
             vertical
             visible={sidebarOpened}
-
             style={{backgroundColor: '#00302a'}}
         >
-            <Menu inverted secondary>
-                {logo()}
-            </Menu>
-            <MyAccordion/>
+
+
+
+            <MyAccordion handleSidebarHide={handleSidebarHide}/>
+
 
         </Sidebar>
     );

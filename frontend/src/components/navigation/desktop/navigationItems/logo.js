@@ -3,10 +3,11 @@ import './logo.css';
 
 import './logo.css';
 import logo from '../../../../assets/logo/logo.png'
+import {Image} from "semantic-ui-react";
 
-const Logo = ({height,style}) => (
-    <div className='responsive'>
-        <img src={logo} alt="logo" height={height} style={style}/>
+const Logo = () => (
+    <div className='Logo'>
+        <Image src={logo}/>
     </div>
 );
 
