@@ -1,0 +1,8 @@
+py manage.py makemigrations --dry-run --verbosity 3
+py manage.py runserver
+py manage.py createsuperuser
+pipenv install coverage
+coverage run --omit='*/Pipenv/*' manage.py test
+coverage html
+pipenv install djangorestframework
+coverage run --omit=*/venv/*,*/migrations*,*/virtualenv/*,*/Pipenv/*,*/site-packages/*,*__init__* manage.py test

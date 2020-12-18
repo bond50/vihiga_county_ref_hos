@@ -28,7 +28,7 @@ const ContactUs = () => {
     const onSubmit = ({email, firstname, lastname, subject, message}) => {
         setIsSubmitting(true);
         axios
-            .post(`${backEndUrl}/contact/`, {
+            .post(`${backEndUrl}/contact/contact/`, {
                 firstname,
                 lastname,
                 email,

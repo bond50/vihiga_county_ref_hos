@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'contact.apps.ContactConfig',
     'corsheaders',
     'rest_framework',
+    'blog'
 ]
 
 MIDDLEWARE = [
