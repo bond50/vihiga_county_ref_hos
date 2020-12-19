@@ -35,67 +35,67 @@ import Tenders from "../components/Tenders/Tenders";
 import Training from "../components/Services/Training/training";
 import Hand from "../components/Covid19/Hand";
 import Preparedness from "../components/Covid19/Preparedness";
-import Success from "../components/messages/success";
-import Error from "../components/messages/error";
 import HealthRecords from "../components/Services/Departments/HealthRecords";
+import Blog from "../components/blog/Blog";
 
 
 const App = () => {
     return (
         <BrowserRouter>
-            <Layout>
-                <ScrollToTop>
-                    <Switch>
 
-                        <Route path='/' exact component={HomepageLayout}/>
-                        <Route path='/contact' exact component={Contact}/>
-                        <Route path='/covid19/covid' exact component={Covid}/>
-                        <Route path='/about/roles' exact component={Roles}/>
-                        <Route path='/about/plan' exact component={Plan}/>
-                        <Route path='/about/health-goals' exact component={HealthGoals}/>
-                        <Route path='/about/neighbor' exact component={NeighBoring}/>
-                        <Route path='/about/projects/project' exact component={Projects}/>
-                        <Route path='/about/projects/partners' exact component={Partners}/>
-                        <Route path='/about/vision' exact component={Vision}/>
-                        <Route path='/about/core-values' exact component={CoreValues}/>
-                        <Route path='/about/mission' exact component={Mission}/>
-                        <Route path='/about/management/board' exact component={Management}/>
-                        <Route path='/about/management/organogram' exact component={Organogram}/>
+                <Layout>
+                    <ScrollToTop>
+                        <Switch>
 
-                        <Route path='/services/departments/directorates' exact component={Directorates}/>
-                        <Route path='/services/departments/pharmacy' exact component={Pharmacy}/>
-                        <Route path='/services/departments/laboratory' exact component={Laboratory}/>
-                        <Route path='/services/departments/radiology' exact component={Radiology}/>
-                        <Route path='/services/departments/ac' exact component={Accident}/>
-                        <Route path='/services/departments/icu' exact component={Icu}/>
-                        <Route path='/services/departments/ambulance' exact component={Ambulance}/>
-                        <Route path='/services/departments/nursing' exact component={Nursing}/>
-                        <Route path='/services/departments/records' exact component={HealthRecords}/>
+                            <Route path='/' exact component={HomepageLayout}/>
+                            <Route path='/contact' exact component={Contact}/>
+                            <Route path='/covid19/covid' exact component={Covid}/>
+                            <Route path='/about/roles' exact component={Roles}/>
+                            <Route path='/about/plan' exact component={Plan}/>
+                            <Route path='/about/health-goals' exact component={HealthGoals}/>
+                            <Route path='/about/neighbor' exact component={NeighBoring}/>
+                            <Route path='/about/projects/project' exact component={Projects}/>
+                            <Route path='/about/projects/partners' exact component={Partners}/>
+                            <Route path='/about/vision' exact component={Vision}/>
+                            <Route path='/about/core-values' exact component={CoreValues}/>
+                            <Route path='/about/mission' exact component={Mission}/>
+                            <Route path='/about/management/board' exact component={Management}/>
+                            <Route path='/about/management/organogram' exact component={Organogram}/>
 
-                        <Route path='/media-center/downloads' exact component={Downloads}/>
-                        <Route path='/media-center/events' exact component={Events}/>
-                        <Route path='/media-center/gallery' exact component={Gallery}/>
-                        <Route path='/media-center/press' exact component={Press}/>
-                        <Route path='/media-center/publications' exact component={Publications}/>
-                        <Route path='/media-center/vacancies' exact component={Vacancies}/>
+                            <Route path='/services/departments/directorates' exact component={Directorates}/>
+                            <Route path='/services/departments/pharmacy' exact component={Pharmacy}/>
+                            <Route path='/services/departments/laboratory' exact component={Laboratory}/>
+                            <Route path='/services/departments/radiology' exact component={Radiology}/>
+                            <Route path='/services/departments/ac' exact component={Accident}/>
+                            <Route path='/services/departments/icu' exact component={Icu}/>
+                            <Route path='/services/departments/ambulance' exact component={Ambulance}/>
+                            <Route path='/services/departments/nursing' exact component={Nursing}/>
+                            <Route path='/services/departments/records' exact component={HealthRecords}/>
 
-                        <Route path='/tenders' exact component={Tenders}/>
-                        <Route path='/contact' exact component={Contact}/>
-                        <Route path='/training' exact component={Training}/>
+                            <Route path='/media-center/downloads' exact component={Downloads}/>
+                            <Route path='/media-center/events' exact component={Events}/>
+                            <Route path='/media-center/gallery' exact component={Gallery}/>
+                            <Route path='/media-center/press' exact component={Press}/>
+                            <Route path='/media-center/publications' exact component={Publications}/>
+                            <Route path='/media-center/vacancies' exact component={Vacancies}/>
 
-                        <Route path='/covid-19/hand' exact component={Hand}/>
-                        <Route path='/covid-19/covid' exact component={Covid}/>
-                        <Route path='/covid-19/prep' exact component={Preparedness}/>
+                            <Route path='/tenders' exact component={Tenders}/>
+                            <Route path='/contact' exact component={Contact}/>
+                            <Route path='/training' exact component={Training}/>
 
-                        <Route path='/success' exact component={Success}/>
-                        <Route path='/error' exact component={Error}/>
+                            <Route path='/covid-19/hand' exact component={Hand}/>
+                            <Route path='/covid-19/covid' exact component={Covid}/>
+                            <Route path='/covid-19/prep' exact component={Preparedness}/>
+
+                            <Route path='/blog'  component={Blog}/>
 
 
 
-                        <Route component={NotFound}/>
-                    </Switch>
-                </ScrollToTop>
-            </Layout>
+                            <Route component={NotFound}/>
+                        </Switch>
+                    </ScrollToTop>
+                </Layout>
+
         </BrowserRouter>
     )
 };
