@@ -1,6 +1,8 @@
 
 export const validate = values => {
-    const errors = {}
+    const errors={}
+
+
     if (!values.firstname) {
         errors.firstname = 'Required'
     }

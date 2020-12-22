@@ -21,9 +21,9 @@ body {
     border-color: rgb(0, 147, 220) !important;
 
 }
-.ui.header{
-    font-variant: small-caps;
-}
+/*.ui.header{*/
+/*    font-variant: small-caps;*/
+/*}*/
 
 .welcomeHeader {
     font-size: 2.5em!important;

@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from "../hocs/Layout";
 import {BrowserRouter, Switch, Route} from "react-router-dom";
 import HomepageLayout from "../components/Home/HomePageLayOut";
-import Contact from "../components/Contact/ContactPageLayout";
+import Contact from "../components/Contact/contactPageLayout";
 import ScrollToTop from "../components/scrollTop";
 import Covid from "../components/Covid19/Covid";
 import Roles from "../components/About/Roles";
@@ -37,6 +37,9 @@ import Hand from "../components/Covid19/Hand";
 import Preparedness from "../components/Covid19/Preparedness";
 import HealthRecords from "../components/Services/Departments/HealthRecords";
 import Blog from "../components/blog/Blog";
+import Signup from "../components/auth/signup";
+import Login from "../components/auth/login";
+import Logout from "../components/auth/logout";
 
 
 const App = () => {
@@ -88,8 +91,9 @@ const App = () => {
                             <Route path='/covid-19/prep' exact component={Preparedness}/>
 
                             <Route path='/blog'  component={Blog}/>
-
-
+                            <Route path='/auth/signup' exact component={Signup}/>
+                            <Route path='/auth/login' exact component={Login}/>
+                            <Route path='/auth/logout' exact component={Logout}/>
 
                             <Route component={NotFound}/>
                         </Switch>
