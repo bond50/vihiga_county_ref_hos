@@ -19,6 +19,7 @@ export const training = (clicked) => (
 
 export const services = (clicked) => (
     <>
+        <Dropdown.Item text='Special Clinics' as={Link} to='/services/departments/clinics' onClick={clicked} />
         <Dropdown.Item text='Directorates' as={Link} to='/services/departments/directorates' onClick={clicked} />
         <Dropdown.Item text='Pharmacy' as={Link} to='/services/departments/pharmacy' onClick={clicked}/>
         <Dropdown.Item text='Laboratory' as={Link} to='/services/departments/laboratory' onClick={clicked}/>

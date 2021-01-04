@@ -8,8 +8,8 @@ const Directorates = () =>
         <p>The hospital has specialized personnel including general surgeons, physicians, a pediatrician,
             obstetrician & gynecologist, ophthalmologist, nurses, clinical officers, laboratory
             technologists, rehabilitative staff and public health staff.</p>
-        <List.Header as='h4'>The clinical services provided include:</List.Header>
-        <List as='ul'>
+        <List.Header as='h3'>The clinical services provided include:</List.Header>
+        <List as='ul' style={{fontSize:'1.33em'}}>
             <List.Item as='li'>Internal Medicine</List.Item>
             <List.Item as='li'>General surgery and anesthesia</List.Item>
             <List.Item as='li'>Pediatrics</List.Item>

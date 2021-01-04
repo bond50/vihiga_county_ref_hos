@@ -17,6 +17,7 @@ import Management from "../components/About/Management/management";
 import Organogram from "../components/About/Management/Organogram";
 import NotFound from "../components/404";
 import Directorates from "../components/Services/Departments/Directorates";
+import Clinics from '../components/Services/Departments/Clinics'
 import Pharmacy from "../components/Services/Departments/Pharmacy";
 import Radiology from "../components/Services/Departments/Radiology";
 import Accident from "../components/Services/Departments/Accident";
@@ -72,6 +73,7 @@ const App = () => {
                             <Route path='/services/departments/ambulance' exact component={Ambulance}/>
                             <Route path='/services/departments/nursing' exact component={Nursing}/>
                             <Route path='/services/departments/records' exact component={HealthRecords}/>
+                            <Route path='/services/departments/clinics' exact component={Clinics}/>
 
                             <Route path='/media-center/downloads' exact component={Downloads}/>
                             <Route path='/media-center/events' exact component={Events}/>
