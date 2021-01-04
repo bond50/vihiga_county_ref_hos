@@ -5,7 +5,7 @@ import {validate} from "../ui/form/validation";
 import SharedForm from "../form/sharedForm";
 import {renderInput} from "../ui/form/Field";
 import axiosInstance from "../axios/axios";
-import {Icon, Message} from "semantic-ui-react";
+
 import {Link} from "react-router-dom";
 
 

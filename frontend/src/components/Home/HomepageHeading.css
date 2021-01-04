@@ -1,0 +1,30 @@
+
+.sesgoabajo {
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-width: 0 0 35vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent #ffffff transparent;
+}
+.sesgoarriba {
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-width: 35vh 100vw 0 0;
+    border-style: solid;
+    border-color: #ffffff transparent transparent transparent;
+}
+.nav-image {
+    background-image: url(imange.png);
+    height: 440px;
+    opacity: 0.8;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.nav-image:hover{
+    opacity: 0.6;
+}

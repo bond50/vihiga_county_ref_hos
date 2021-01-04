@@ -1,4 +1,4 @@
-import PostLoading from "../../hocs/Postloading";
+import PostLoading from "../../hocs/Postloading/Postloading";
 import Posts from "./Posts";
 import React, {useEffect, useState} from 'react';
 import {Container, Segment} from "semantic-ui-react";

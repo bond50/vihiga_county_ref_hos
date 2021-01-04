@@ -1,10 +1,12 @@
 import React from 'react';
-import {Container, Dropdown, Menu} from "semantic-ui-react";
+import {Container, Dropdown, Icon, Image, Menu} from "semantic-ui-react";
 import {connect} from "react-redux";
 
-import {about,  covid,media, services, } from "./links/links";
-import Logo from "./logo";
+import {about, covid, media, services,} from "./links/links";
+import Logo from "./Logo/Logo";
 import NavLink from "./links/Link";
+import logo from '../../../../assets/logo/VCGlogo.png';
+import './NavigationItems.css';
 
 
 function mapStateToProps(state) {
@@ -15,93 +17,91 @@ function mapStateToProps(state) {
 
 
 const NavigationItems = ({activeItem, handleItemClick, fixed}) => (
-    <Container>
-        <Menu
-            fixed={fixed ? 'top' : null}
-            pointing={!fixed}
-            inverted={fixed}
-            secondary={!fixed}
-            style={{background: fixed ? '#2CC73E' : 'transparent'}}
-        >
+    <Menu
+        fixed={fixed ? 'top' : null}
+        secondary={!fixed}
+        pointing={!fixed}
+        size={!fixed ?'massive':'huge'}
+        widths={9}
+    >
+        <Container>
+            <Menu.Item>
+               <img src={logo} alt='logo' />
+            </Menu.Item>
+            <NavLink
+                to='/'
+                handleItemClick={handleItemClick}
+                name='home'
+                activeItem={activeItem === 'home'}>
+                home
+            </NavLink>
+            <Dropdown
+                item
+                text='About'
+                name='about'
+                activeItem={activeItem === 'about'}
+                onClick={handleItemClick}>
+                <Dropdown.Menu>
+                    {about()}
+                </Dropdown.Menu>
+            </Dropdown>
 
-            <Container>
-                <NavLink
-                    to='/'
-                    handleItemClick={handleItemClick}
-                    name='home'
-                    activeItem={activeItem === 'home'}>
-                    {fixed ? 'home' : <Logo/>}
-                </NavLink>
-                <Menu.Menu position='right' >
-                    <Dropdown
+            <Dropdown
+                item
+                text='Services'
+                name='services'
+                activeItem={activeItem === 'services'}
+                onClick={handleItemClick}>
+                <Dropdown.Menu>
+                    {services()}
+                </Dropdown.Menu>
+            </Dropdown>
+            <Dropdown
+                item
+                text='Media'
+                name='Media'
+                activeItem={activeItem === 'media'}
+                onClick={handleItemClick}>
+                <Dropdown.Menu>
+                    {media()}
+                </Dropdown.Menu>
+            </Dropdown>
 
-                        item
-                        text='About'
-                        name='about'
-                        activeItem={activeItem === 'about'}
-                        onClick={handleItemClick}>
-                        <Dropdown.Menu>
-                            {about()}
-                        </Dropdown.Menu>
-                    </Dropdown>
+            <NavLink
+                to='/training'
+                handleItemClick={handleItemClick}
+                name='training'
+                activeItem={activeItem === 'training'}>
+                training
+            </NavLink>
 
-                    <Dropdown
-                        item
-                        text='Services'
-                        name='services'
-                        activeItem={activeItem === 'services'}
-                        onClick={handleItemClick}>
-                        <Dropdown.Menu>
-                            {services()}
-                        </Dropdown.Menu>
-                    </Dropdown>
-                    <Dropdown
-                        item
-                        text='Media'
-                        name='Media'
-                        activeItem={activeItem === 'media'}
-                        onClick={handleItemClick}>
-                        <Dropdown.Menu>
-                            {media()}
-                        </Dropdown.Menu>
-                    </Dropdown>
+            <NavLink
+                to='/tenders'
+                handleItemClick={handleItemClick}
+                name='tenders'
+                activeItem={activeItem === 'tenders'}>
+                tenders
+            </NavLink>
+            <NavLink
+                to='/contact'
+                handleItemClick={handleItemClick}
+                name='contact'
+                activeItem={activeItem === 'contact'}>
+                contact us
+            </NavLink>
+            <Dropdown
+                item
+                text='Covid'
+                name='covid'
+                activeItem={activeItem === 'covid'}
+                onClick={handleItemClick}>
+                <Dropdown.Menu>
+                    {covid()}
+                </Dropdown.Menu>
+            </Dropdown>
+        </Container>
+    </Menu>
 
-                    <NavLink
-                        to='/training'
-                        handleItemClick={handleItemClick}
-                        name='training'
-                        activeItem={activeItem === 'training'}>
-                        training
-                    </NavLink>
-
-                    <NavLink
-                        to='/tenders'
-                        handleItemClick={handleItemClick}
-                        name='tenders'
-                        activeItem={activeItem === 'tenders'}>
-                        tenders
-                    </NavLink>
-                    <NavLink
-                        to='/contact'
-                        handleItemClick={handleItemClick}
-                        name='contact'
-                        activeItem={activeItem === 'contact'}>
-                        contact us
-                    </NavLink>
-                    <Dropdown
-                        item
-                        text='Covid'
-                        name='covid'
-                        activeItem={activeItem === 'covid'}
-                        onClick={handleItemClick}>
-                        <Dropdown.Menu>
-                            {covid()}
-                        </Dropdown.Menu>
-                    </Dropdown>
-                </Menu.Menu>
-            </Container>
-        </Menu>
-    </Container>
 );
 
 export default connect(mapStateToProps)(NavigationItems);

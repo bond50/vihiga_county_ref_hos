@@ -6,13 +6,15 @@ import {List, Header} from "semantic-ui-react";
 
 const Pharmacy = () =>
     <AboutContainer title='The Vihiga County Referral Hospital Pharmacy'>
-        <List.Item>The pharmacy team in Vihiga County Referral Hospital is highly skilled and offer professional
+        <List.Item style={{fontSize:'1.33em'}}>
+            The pharmacy team in Vihiga County Referral Hospital is highly skilled and offer professional
             services to
             clients.We offer both outpatient and inpatient services. We dispense standard medicines at
             affordable prices. Our in house committee inspects the medicines before stocking. The Hospital procures
             all medicines and medical supplies only from registered suppliers thereby guaranteeing our patients
             quality medicines at all times, especially in light of the risk of counterfeit and substandard products
-            in the industry. </List.Item>
+            in the industry.
+        </List.Item>
         <Header as='h3'>Pharmacy Services</Header>
         <p>The main pharmacy is in Kenya,Vihiga County ,Along Kisumu-Kakamega road at mbale centre within Vihiga
             County referral Hospital ,on the basement next to ICT/PABX Room. The main outpatient Pharmacy operates
@@ -26,7 +28,7 @@ const Pharmacy = () =>
         <p>We look forward to ensure that all prescribed medicines are available at our pharmacy at better
             discounted prices </p>
         <List.Header as='h3'>Vihiga County referral Hospital Has the following Pharmacy Outlets</List.Header>
-        <List as='ul'>
+        <List as='ul' style={{fontSize:'1.33em'}}>
             <List.Item as='li'>Outpatient Pharmacy</List.Item>
             <List.Item as='li'>NHIF pharmacy</List.Item>
             <List.Item as='li'>Inpatient Pharmacy</List.Item>

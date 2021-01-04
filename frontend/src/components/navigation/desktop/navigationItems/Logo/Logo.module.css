@@ -1,0 +1,10 @@
+.myStyles {
+    box-sizing: border-box;
+    height: 3.5em;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+}
+
+.myStyles  img {
+    height: 100%;
+}

@@ -1,5 +1,4 @@
 import React from 'react';
-import Layout from "../hocs/Layout";
 import {BrowserRouter, Switch, Route} from "react-router-dom";
 import HomepageLayout from "../components/Home/HomePageLayOut";
 import Contact from "../components/Contact/contactPageLayout";
@@ -40,16 +39,15 @@ import Blog from "../components/blog/Blog";
 import Signup from "../components/auth/signup";
 import Login from "../components/auth/login";
 import Logout from "../components/auth/logout";
+import ResponsiveContainer from "../hocs/Responsive/ResponsiveContainer";
 
 
 const App = () => {
     return (
         <BrowserRouter>
-
-                <Layout>
+                <ResponsiveContainer>
                     <ScrollToTop>
                         <Switch>
-
                             <Route path='/' exact component={HomepageLayout}/>
                             <Route path='/contact' exact component={Contact}/>
                             <Route path='/covid19/covid' exact component={Covid}/>
@@ -89,21 +87,19 @@ const App = () => {
                             <Route path='/covid-19/hand' exact component={Hand}/>
                             <Route path='/covid-19/covid' exact component={Covid}/>
                             <Route path='/covid-19/prep' exact component={Preparedness}/>
-
                             <Route path='/blog'  component={Blog}/>
                             <Route path='/auth/signup' exact component={Signup}/>
                             <Route path='/auth/login' exact component={Login}/>
                             <Route path='/auth/logout' exact component={Logout}/>
-
                             <Route component={NotFound}/>
                         </Switch>
                     </ScrollToTop>
-                </Layout>
+                </ResponsiveContainer>
 
         </BrowserRouter>
     )
 };
 
-export default (App);
+export default App;
 
 
