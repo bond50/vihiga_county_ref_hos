@@ -6,11 +6,11 @@ import classes from "./HomepageHeading.module.css";
 const HomeWelcome = () => (
          <Segment vertical className={classes.segment}>
             <Grid stackable verticalAlign='middle' divided='vertically' >
-                <Grid.Row>
+                <Grid.Row className={classes.row}>
                     <Grid.Column width={10}>
-                        <Header as='h1' className='myHeader' >
+                        < h1 className={classes.header} >
                             Welcome To Vihiga County Referral Hospital
-                        </Header>
+                        </h1>
                         <Divider hidden/>
                         <p>
                             <strong><em>We Take Care Of Your Precious Health.</em></strong>

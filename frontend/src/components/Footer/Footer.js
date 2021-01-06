@@ -8,16 +8,12 @@ import {
     Button,
     Container,
     Divider,
-    Image,
-    Embed,
-    Input,
-    Card
 } from "semantic-ui-react";
 import {Link} from "react-router-dom";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faXRay, faMicroscope, faCapsules} from '@fortawesome/free-solid-svg-icons'
 import './Footer.css'
-import {Carousel} from "react-responsive-carousel";
+
 
 
 const Footer = () => (
@@ -28,7 +24,7 @@ const Footer = () => (
                 <Grid stackable columns='equal' textAlign='center' verticalAlign='middle'>
                     <Grid.Column as={Link} to='/services/departments/pharmacy' style={{color: '#fff'}}>
                         <Divider
-                            as='h3'
+                            as='h6'
                             inverted
                             className='header'
                             horizontal
@@ -37,11 +33,11 @@ const Footer = () => (
                         </Divider>
 
                         <p style={{opacity:'0.7'}}>Quality Medicines</p>
-                        <FontAwesomeIcon icon={faCapsules} size='10x' style={{opacity:'0.7'}}/>
+                        <FontAwesomeIcon icon={faCapsules} size='5x' style= {{opacity:'0.7'}}/>
                     </Grid.Column>
                     <Grid.Column as={Link} to='/services/departments/radiology' style={{color: '#fff'}}>
                         <Divider
-                            as='h3'
+                            as='h6'
                             inverted
                             className='header'
                             horizontal
@@ -50,12 +46,12 @@ const Footer = () => (
 
                         </Divider>
                         <p style={{opacity:'0.7'}}>The best Ct Scan in the region</p>
-                        <FontAwesomeIcon icon={faXRay} size='10x' style={{opacity:'0.7'}}/>
+                        <FontAwesomeIcon icon={faXRay} size='5x' style= {{opacity:'0.7'}} />
 
                     </Grid.Column>
                     <Grid.Column as={Link} to='/services/departments/laboratory' style={{color: '#fff'}}>
                         <Divider
-                            as='h3'
+                            as='h6'
                             inverted
                             className='header'
                             horizontal
@@ -64,7 +60,7 @@ const Footer = () => (
 
                         </Divider>
                         <p style={{opacity:'0.7'}}>Most accurate results</p>
-                        <FontAwesomeIcon icon={faMicroscope} size='10x' style={{opacity:'0.7'}}/>
+                        <FontAwesomeIcon icon={faMicroscope} size='5x' style={{opacity:'0.7'}}/>
                     </Grid.Column>
 
                 </Grid>

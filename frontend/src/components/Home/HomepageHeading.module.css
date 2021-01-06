@@ -1,17 +1,37 @@
 .segment {
     border: 1px solid #ccc !important;
-    padding: 60px 5% 60px 5% !important;
+    padding: 30px 5% 30px 5% !important;
     position: relative !important;
-    background: #fff!important;
-    margin-bottom: 30px!important;
+    background: #fff !important;
+    margin-bottom: 30px !important;
+}
+
+.segment .row {
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+}
+
+.segment .h1 {
+    font-family: Merriweather, serif;
+    font-size: 24px;
+    line-height: 28px;
+    margin: 10px 0 5px 0;
+    font-weight: normal;
+}
+
+.segment p {
+    font-size: 1em !important;
+    line-height: 1.4 !important;
+    margin: 10px 0 !important;
+    white-space: pre-wrap !important;
 }
 
 .segmentAfterNav {
     border: 1px solid #ccc !important;
-    padding: 0!important;
+    padding: 1px 0 !important;
     position: relative !important;
-    background: #fff!important;
-    margin-bottom: 30px!important;
+    background: #fff !important;
+    margin-bottom: 30px !important;
 }
 
 
@@ -75,6 +95,18 @@
     }
 
 }
+
 .callout {
-    background: #2cc72e url(gplaypattern.png) repeat!important;
+    background: url(gplaypattern.png) repeat !important;
+}
+
+.green {
+    background-color: #2cc72e !important;
+}
+
+.blue {
+    background-color: #3b5998 !important;
+}
+.grey{
+       background-color: #dcdcdc !important;
 }

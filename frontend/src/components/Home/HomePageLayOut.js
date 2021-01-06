@@ -6,6 +6,7 @@ import HomeAchieved from "./HomeAchieved";
 import HomeStrategic from "./HomeStrategic";
 import HomePrincipals from "./HomePrincipals";
 import HomeWelcome from "./HomeWelcome";
+import HomeRoles from "./HomeRoles";
 
 
 const HomepageLayout = () => (
@@ -16,6 +17,7 @@ const HomepageLayout = () => (
             <HomeAchieved/>
             <HomeStrategic/>
             <HomePrincipals/>
+            <HomeRoles/>
         </React.Fragment>
     )
 ;

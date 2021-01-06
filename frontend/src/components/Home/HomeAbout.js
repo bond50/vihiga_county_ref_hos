@@ -6,14 +6,14 @@ import classes from './HomepageHeading.module.css'
 const HomeAbout = () => (
         <Segment vertical className={classes.segment}>
             <Grid celled='internally' stackable>
-                <Grid.Row>
+                <Grid.Row className={classes.row}>
                     <Grid.Column width={4}>
                         <p>
                             Latest News
                         </p>
                     </Grid.Column>
                     <Grid.Column width={12}>
-                        <Header as='h2'>About us</Header>
+                        <h1 className={classes.header}>About us </h1>
                         <p>Vihiga County Referral Hospital (VCRH) has offered services to the people of Vihiga and its
                             environs for the last {YearsOperated()} years. At inception it was referred to as the Vihiga
                             District Hospital and later renamed following devolution of health services in Kenya.VCRH

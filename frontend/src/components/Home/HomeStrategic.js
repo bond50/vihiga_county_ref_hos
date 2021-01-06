@@ -5,7 +5,7 @@ import image from "../../assets/plan/strategic.jpg";
 import classes from "./HomepageHeading.module.css";
 
 const HomeStrategic = () => {
-    let assignedClasses=[classes.segment ,classes.callout]
+    const assignedClasses = [classes.segment, classes.callout, classes.green]
     return (
         <Segment vertical className={assignedClasses.join(' ')} inverted>
             <Grid stackable divided='vertically' >
