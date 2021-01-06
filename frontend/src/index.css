@@ -1,16 +1,15 @@
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth !important;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: "Open Sans", sans-serif !important;
-    font-size: 16px !important;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    margin: 0 !important;
+    padding: 0 0 0 0 !important;
+    color: #000 !important;
+    font: normal 0.9em/150% "Open Sans", sans-serif !important;
+    text-shadow: 0 0 1px transparent !important;
+    background: #efefef url(assets/gray_jean.png) !important;
 
-    background-color: #e5e5e5 !important;
     /*background-image: linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),*/
     /*linear-gradient(#eee .1em, transparent .1em) !important;*/
     /*background-size: 100% 1.2em !important;*/
@@ -21,32 +20,47 @@ body {
 
 h1 {
     font-size: 2.5em !important;
-    color: #0093da !important;
 }
 
 h2 {
     font-size: 2em !important;
-    color: #0093da !important;
 }
 
 h3 {
-    color: #38aed0 !important;
+
     font-size: 1.5em !important;
+    opacity: 0.8;
 }
+
 
 h5 {
-    color: rgba(0,0,0,0.6) !important;
+    color: rgba(0, 0, 0, 0.6) !important;
     font-size: 1.33em !important;
 }
 
 
-h1,h2,h3,h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: Merriweather, serif !important;
+     margin:10px 0 5px 0!important;
+    font-weight: normal !important;
 
 }
+
 p {
     line-height: 1.4 !important;
-    font-size: 1.33em !important;
+    font-size: 1.11em !important;
+    margin: 10px 0 !important;
+    white-space: pre-wrap!important;
+
+}
+ul, ol{
+padding:0!important;
+margin:0 0 20px 25px!important;
+}
+
+li{
+padding:5px 0!important;
+margin:0!important;
 }
 
 

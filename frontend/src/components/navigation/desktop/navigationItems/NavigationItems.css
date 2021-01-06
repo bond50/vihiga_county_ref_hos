@@ -1,19 +1,16 @@
 .ui.pointing.secondary.menu {
     box-shadow: none !important;
     flex-wrap: wrap !important;
-
-
+    background-color: #f5f5f5;
 }
 
 .ui.pointing.secondary.menu .item {
-    font-family: Merriweather, serif !important;
-}
-.ui.top.fixed.nine.item.menu{
-    font-family: Merriweather, serif !important;
+   font-size: 1.5em!important;
 
 }
+
+
 .ui.pointing.secondary.menu .item:hover {
-
     color: rgb(44, 199, 62) !important;
 }
 

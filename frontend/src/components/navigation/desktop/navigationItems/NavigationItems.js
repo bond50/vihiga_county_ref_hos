@@ -1,12 +1,13 @@
 import React from 'react';
-import {Container, Dropdown, Icon, Image, Menu} from "semantic-ui-react";
+import {Container, Dropdown, Image, Menu} from "semantic-ui-react";
 import {connect} from "react-redux";
 
 import {about, covid, media, services,} from "./links/links";
-import Logo from "./Logo/Logo";
 import NavLink from "./links/Link";
-import logo from '../../../../assets/logo/VCGlogo.png';
+import logo from '../../../../assets/logo/lognobg.png';
 import './NavigationItems.css';
+import Logo from "./Logo/Logo";
+
 
 
 function mapStateToProps(state) {
@@ -21,13 +22,15 @@ const NavigationItems = ({activeItem, handleItemClick, fixed}) => (
         fixed={fixed ? 'top' : null}
         secondary={!fixed}
         pointing={!fixed}
-        size={!fixed ?'massive':'huge'}
+        size='tiny'
         widths={9}
+
+
     >
         <Container>
-            <Menu.Item>
-               <img src={logo} alt='logo' />
-            </Menu.Item>
+
+               <Logo />
+
             <NavLink
                 to='/'
                 handleItemClick={handleItemClick}

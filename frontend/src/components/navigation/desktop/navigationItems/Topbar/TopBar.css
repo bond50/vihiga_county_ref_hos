@@ -1,5 +1,8 @@
 .TopBar{
-    background-color: #2cc73e!important;
+    background: #2cc72e url(gplaypattern.png) repeat!important;
     border: none!important;
     box-shadow: none!important;
+}
+.TopBar .ui.grid>.row{
+    padding:0.5em!important; ;
 }

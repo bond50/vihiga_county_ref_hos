@@ -43,12 +43,11 @@ const ContactUs = () => {
     };
 
     return (
-        <Container>
-            <ContactForm onSubmit={onSubmit}/>
 
+        <>
+            <ContactForm onSubmit={onSubmit}/>
             <div>
                 <Dimmer active={isSubmitting}>
-
                 </Dimmer>
             </div>
             <ContactModal
@@ -57,7 +56,7 @@ const ContactUs = () => {
                 dimmer={true}
                 open={showModal}
                 onClose={handleOnClose}/>
-        </Container>
+        </>
     );
 };
 

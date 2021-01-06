@@ -26,10 +26,11 @@ export default class AccordionExampleMenu extends Component {
         const {handleSidebarHide} = this.props
 
         return (
-            <Accordion as={Menu} vertical fluid secondary inverted size='huge'>
+            <Accordion as={Menu} vertical fluid secondary  size='huge'>
                 {logo(handleSidebarHide)}
-                <Menu.Item as='a'>
+                <Menu.Item as='a' >
                     <Accordion.Title
+                        style={{color:'rgba(0,0,0,0.6)'}}
                         active={activeIndex === 0}
                         content='About Us'
                         index={0}
@@ -43,6 +44,7 @@ export default class AccordionExampleMenu extends Component {
                 </Menu.Item>
                 <Menu.Item as='a'>
                     <Accordion.Title
+                        style={{color:'rgba(0,0,0,0.6)'}}
                         active={activeIndex === 1}
                         content='Services'
                         index={1}
@@ -52,6 +54,7 @@ export default class AccordionExampleMenu extends Component {
                 </Menu.Item>
                 <Menu.Item as='a'>
                     <Accordion.Title
+                        style={{color:'rgba(0,0,0,0.6)'}}
                         active={activeIndex === 2}
                         content='Media'
                         index={2}
@@ -65,6 +68,7 @@ export default class AccordionExampleMenu extends Component {
 
                 <Menu.Item as='a'>
                     <Accordion.Title
+                        style={{color:'rgba(0,0,0,0.6)'}}
                         active={activeIndex === 3}
                         content='Covid'
                         index={3}

@@ -66,7 +66,7 @@ const ContactForm = ({handleSubmit, pristine, reset, submitting}) => {
             content="Fill out the form below to contact us"
             handleSubmit={handleSubmit}
             pristine={pristine}
-            columnMaxWidth={{maxWidth: 500}}
+            columnMaxWidth={{maxWidth: 600}}
             reset={reset}
             message={
                 <>

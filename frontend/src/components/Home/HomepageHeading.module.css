@@ -1,0 +1,80 @@
+.segment {
+    border: 1px solid #ccc !important;
+    padding: 60px 5% 60px 5% !important;
+    position: relative !important;
+    background: #fff!important;
+    margin-bottom: 30px!important;
+}
+
+.segmentAfterNav {
+    border: 1px solid #ccc !important;
+    padding: 0!important;
+    position: relative !important;
+    background: #fff!important;
+    margin-bottom: 30px!important;
+}
+
+
+.sesgoabajo {
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-width: 0 0 35vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent #ffffff transparent;
+}
+
+.sesgoarriba {
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-width: 35vh 100vw 0 0;
+    border-style: solid;
+    border-color: #ffffff transparent transparent transparent;
+}
+
+.navImage {
+    background-image: url(imange.png);
+    height: 455px;
+    opacity: 0.8;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navImage:hover {
+    opacity: 0.6;
+}
+
+
+.myHeader {
+    letter-spacing: normal;
+    background: #0093da;
+    text-transform: uppercase;
+    animation-name: text;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+
+@keyframes text {
+    0% {
+        color: black;
+        margin-bottom: -40px;
+
+    }
+    30% {
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+    }
+    85% {
+        letter-spacing: 8px;
+        margin-bottom: -40px;
+    }
+
+}
+.callout {
+    background: #2cc72e url(gplaypattern.png) repeat!important;
+}

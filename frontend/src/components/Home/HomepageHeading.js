@@ -1,14 +1,14 @@
 import React from 'react';
-import {Container, Grid} from "semantic-ui-react";
-import './HomepageHeading.css';
+import { Segment} from "semantic-ui-react";
+import  classes from './HomepageHeading.module.css';
 
 const HomepageHeading = ({mobile}) => (
-    <React.Fragment>
-        <Container >
-            <div className='nav-image'>
+        <Segment textAlign='center' vertical className={classes.segmentAfterNav}>
+            <div className={classes.navImage}>
             </div>
-        </Container>
-    </React.Fragment>
+        </Segment>
+
+
 )
 
 export default HomepageHeading;

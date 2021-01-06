@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../HTML-KickStart-master/.idea/HTML-KickStart-master.iml" filepath="$PROJECT_DIR$/../HTML-KickStart-master/.idea/HTML-KickStart-master.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/vihiga.iml" filepath="$PROJECT_DIR$/.idea/vihiga.iml" />
     </modules>
   </component>

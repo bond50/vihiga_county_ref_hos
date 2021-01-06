@@ -22,9 +22,9 @@ const Clock = () => {
 
     return (
 
-        <Header as='h4' inverted>
+        <div>
             {state.time}
-        </Header>
+        </div>
 
     );
 };

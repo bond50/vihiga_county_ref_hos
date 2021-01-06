@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import {Media} from "../../hocs/FresnelMedia/CreateMedia";
 import {Sidebar} from "semantic-ui-react";
 import MobileNav from "../../components/navigation/mobile/MobileNav";
-import Footer from "../../components/Footer/Footer";
 
 
 function MobileContainer({children}) {
@@ -16,9 +15,8 @@ function MobileContainer({children}) {
             <MobileNav
                 sidebarOpened={sidebarOpened}
                 handleSidebarHide={handleSidebarHide}
-                handleToggle={handleToggle}/>
-            {children}
-            <Footer/>
+                handleToggle={handleToggle}
+                children={children}/>
         </Media>
     )
 }

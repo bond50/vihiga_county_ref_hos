@@ -9,18 +9,12 @@ const Pushable = ({handleSidebarHide, sidebarOpened}) => {
         <Sidebar
             as={Menu}
             animation='overlay'
-            inverted
             onHide={handleSidebarHide}
             vertical
             visible={sidebarOpened}
-            style={{backgroundColor: '#00302a'}}
+            style={{backgroundColor: 'white'}}
         >
-
-
-
             <MyAccordion handleSidebarHide={handleSidebarHide}/>
-
-
         </Sidebar>
     );
 };

@@ -21,8 +21,8 @@ const Management = () =>
             the
             County Executive Committee member of Health (who heads the Department of Health) and the County
             Governor.</p>
-        <h3>The facility has:</h3>
-        <List as='ol'>
+        <h2>The facility has:</h2>
+        <List as='ul' style={{fontSize:"1.33em"}}>
             <List.Item as='li'> A well Established , effective and efficient hospital management leadership
                 and governance
                 system.

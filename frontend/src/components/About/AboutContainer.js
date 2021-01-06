@@ -1,15 +1,18 @@
 import React from 'react';
-import {Grid, Header, Segment} from "semantic-ui-react";
+import {Container, Grid, Header, Segment} from "semantic-ui-react";
+import {segment,header} from './AboutContainer.module.css'
 
-const AboutContainer = ({children, title}) => <Segment style={{padding: '3.5em 0em'}} vertical>
-    <Grid container colums={1}  verticalAlign='top'>
-        <Grid.Column>
-            <Header as='h3'>{title}</Header>
-            {children}
-        </Grid.Column>
-    </Grid>
-
-</Segment>
-
+const AboutContainer = ({children, title}) => (
+    <Container style={{backgroundColor: "#ffffff"}}>
+        <Segment vertical className={segment}>
+            <Grid   style={{height: '100vh'}} >
+                <Grid.Column>
+                    <Header as='h2' className={header}>{title} </Header>
+                    {children}
+                </Grid.Column>
+            </Grid>
+        </Segment>
+    </Container>
+)
 
 export default AboutContainer;

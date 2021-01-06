@@ -1,12 +1,12 @@
 import React from 'react';
 import {myStyles} from './Logo.module.css';
-import logo from '../../../../../assets/logo/VCGlogo.png';
-import {Image} from "semantic-ui-react";
+import logo from '../../../../../assets/logo/lognobg.png';
+
 
 
 const Logo = () => (
     <div className={myStyles} >
-        <Image src={logo}/>
+        <img src={logo} alt='Logo'/>
     </div>
 );
 

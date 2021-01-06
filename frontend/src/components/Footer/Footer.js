@@ -27,9 +27,8 @@ const Footer = () => (
             <Container>
                 <Grid stackable columns='equal' textAlign='center' verticalAlign='middle'>
                     <Grid.Column as={Link} to='/services/departments/pharmacy' style={{color: '#fff'}}>
-
                         <Divider
-                            as='h5'
+                            as='h3'
                             inverted
                             className='header'
                             horizontal
@@ -37,12 +36,12 @@ const Footer = () => (
                             PHARMACY
                         </Divider>
 
-                        <p>Quality Medicines</p>
-                        <FontAwesomeIcon icon={faCapsules} size='10x'/>
+                        <p style={{opacity:'0.7'}}>Quality Medicines</p>
+                        <FontAwesomeIcon icon={faCapsules} size='10x' style={{opacity:'0.7'}}/>
                     </Grid.Column>
                     <Grid.Column as={Link} to='/services/departments/radiology' style={{color: '#fff'}}>
                         <Divider
-                            as='h5'
+                            as='h3'
                             inverted
                             className='header'
                             horizontal
@@ -50,13 +49,13 @@ const Footer = () => (
                             RADIOLOGY
 
                         </Divider>
-                        <p>The best Ct Scan in the region</p>
-                        <FontAwesomeIcon icon={faXRay} size='10x'/>
+                        <p style={{opacity:'0.7'}}>The best Ct Scan in the region</p>
+                        <FontAwesomeIcon icon={faXRay} size='10x' style={{opacity:'0.7'}}/>
 
                     </Grid.Column>
                     <Grid.Column as={Link} to='/services/departments/laboratory' style={{color: '#fff'}}>
                         <Divider
-                            as='h5'
+                            as='h3'
                             inverted
                             className='header'
                             horizontal
@@ -64,8 +63,8 @@ const Footer = () => (
                             LABORATORY
 
                         </Divider>
-                        <p>Most accurate results</p>
-                        <FontAwesomeIcon icon={faMicroscope} size='10x'/>
+                        <p style={{opacity:'0.7'}}>Most accurate results</p>
+                        <FontAwesomeIcon icon={faMicroscope} size='10x' style={{opacity:'0.7'}}/>
                     </Grid.Column>
 
                 </Grid>
@@ -83,8 +82,8 @@ const Footer = () => (
 
             </div>
             <Container>
-                <Grid divided doubling inverted columns={4}>
-                    <Grid.Row>
+                <Grid divided stackable inverted columns={4} >
+
                         <Grid.Column>
                             <Header inverted as='h4' content='Vihiga County Referral Hospital'/>
                             <List link inverted>
@@ -144,11 +143,11 @@ const Footer = () => (
                                 <List.Item><a href='https://health.go.ke/'>M.O.H website</a> </List.Item>
                             </List>
                         </Grid.Column>
-                    </Grid.Row>
+
                 </Grid>
                 <Divider inverted section/>
 
-                <Grid columns={5} doubling>
+                <Grid columns={4} stackable>
                     <Grid.Column>
                         <Button color='facebook' size='tiny' as='a' href='https://facebook.com'>
                             <Icon name='facebook'/> Official Facebook Page

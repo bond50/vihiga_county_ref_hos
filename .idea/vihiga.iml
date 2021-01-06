@@ -21,6 +21,7 @@
     <orderEntry type="library" name="animate.css" level="application" />
     <orderEntry type="library" name="semantic-ui" level="application" />
     <orderEntry type="library" name="slick-carousel" level="application" />
+    <orderEntry type="module" module-name="HTML-KickStart-master" />
   </component>
   <component name="PyDocumentationSettings">
     <option name="format" value="PLAIN" />
