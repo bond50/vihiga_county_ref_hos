@@ -6,7 +6,7 @@ import {List} from "semantic-ui-react";
 const Preparedness = () => <AboutContainer title='Measures To Be Observed At Vihiga County Referral Hospital During The
             COVID-19 Pandemic Period'>
 
-    <List as='ul' style={{fontSize:'1.33em'}}>
+    <List as='ul' >
         <List.Item as='li'>
             <strong>Visiting hours: <em>Limit one relative per patient</em>:</strong>
             <List as='ul'>

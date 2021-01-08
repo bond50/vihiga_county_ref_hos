@@ -26,7 +26,7 @@ const HomeStrategic = () => {
                             up the basis of development of the plan ....
 
                         </p>
-                        <Button as={Link} to='/about/plan' animated>
+                        <Button as={Link} to='/about/plan' animated inverted >
                             <Button.Content visible> More <Icon name='angle double right'/> </Button.Content>
                             <Button.Content hidden> <Icon name='arrow right'/></Button.Content>
                         </Button>

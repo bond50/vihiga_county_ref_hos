@@ -3,7 +3,7 @@ import AboutContainer from "../AboutContainer";
 import {List} from "semantic-ui-react";
 
 const CoreValues = () => <AboutContainer title='Core Values'>
-            <List as='ul' style={{fontSize:'1.33em'}}>
+            <List as='ul' >
                 <List.Item >Accountability</List.Item>
                 <List.Item >Commitment</List.Item>
                 <List.Item >Integrity</List.Item>

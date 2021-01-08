@@ -1,12 +1,11 @@
 import React from 'react';
-import {Container, Dropdown, Image, Menu} from "semantic-ui-react";
+import {Container, Dropdown, Menu} from "semantic-ui-react";
 import {connect} from "react-redux";
 
 import {about, covid, media, services,} from "./links/links";
 import NavLink from "./links/Link";
-import logo from '../../../../assets/logo/lognobg.png';
 import './NavigationItems.css';
-import Logo from "./Logo/Logo";
+// import Logo from "./Logo/Logo";
 
 
 
@@ -24,12 +23,10 @@ const NavigationItems = ({activeItem, handleItemClick, fixed}) => (
         pointing={!fixed}
         size='tiny'
         widths={9}
-
-
     >
         <Container>
 
-               <Logo />
+               {/*<Logo />*/}
 
             <NavLink
                 to='/'

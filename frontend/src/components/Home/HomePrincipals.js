@@ -4,9 +4,9 @@ import logo from "../../assets/logo/logo.png";
 import classes from "./HomepageHeading.module.css";
 
 const HomePrincipals = () => {
-     const assignedClasses = [classes.segment, classes.callout, classes.grey]
+
     return (
-        <Segment vertical className={assignedClasses.join(' ')}>
+        <Segment vertical className={classes.segment}>
             <Grid stackable columns='equal'>
                 <Grid.Row>
                     <Grid.Column>

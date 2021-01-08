@@ -9,7 +9,7 @@ const Roles = () => <AboutContainer
         with the greater community and other institutions.<br/> Some of the roles played by the hospital in
         the county include;
     </Header>
-    <List as='ol' style={{fontSize:'1.33em'}}>
+    <List as='ol' >
         <List.Item as='li'> Acting as a county referral hospitals for the 3 sub county hospitals and as an
             intermediary to the National and Teaching referral hospitals.
         </List.Item>

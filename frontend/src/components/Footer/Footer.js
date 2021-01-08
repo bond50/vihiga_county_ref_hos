@@ -43,7 +43,7 @@ const Footer = () => (
                             horizontal
                         >
                             RADIOLOGY
-
+npm
                         </Divider>
                         <p style={{opacity:'0.7'}}>The best Ct Scan in the region</p>
                         <FontAwesomeIcon icon={faXRay} size='5x' style= {{opacity:'0.7'}} />

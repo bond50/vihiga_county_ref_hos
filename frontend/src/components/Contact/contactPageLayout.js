@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import {
-    Container,
     Dimmer,
 } from "semantic-ui-react";
 import ContactForm from "./MyForm";

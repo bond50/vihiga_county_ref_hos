@@ -5,13 +5,14 @@ import Footer from "../../components/Footer/Footer";
 import {Container} from "semantic-ui-react";
 
 
+
 function DesktopContainer({children}) {
     return (
         <Media greaterThan='mobile'>
             <DeskTopNav/>
-           <Container >
+            <Container>
                 {children}
-           </Container>
+            </Container>
             <Footer/>
         </Media>
     )

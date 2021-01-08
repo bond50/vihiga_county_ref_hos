@@ -4,13 +4,13 @@ import {Link} from "react-router-dom";
 import classes from "./HomepageHeading.module.css";
 
 const HomeRoles = () => {
-    const assignedClasses = [classes.segment, classes.callout, classes.blue]
+
     return (
-        <Segment vertical className={assignedClasses.join(' ')} inverted>
+        <Segment vertical className={classes.segment} >
             <h1 className={classes.header}>
                 Some of roles we play in the county
             </h1>
-            <List as='ul' inverted>
+            <List as='ul' >
                 <List.Item as='a'>
                     <List.Content>
                         <List.Header>
@@ -46,7 +46,7 @@ const HomeRoles = () => {
                     </List.Content>
                 </List.Item>
                 <List.Item>
-                    <Button as={Link} to='/about/roles' animated basic inverted>
+                    <Button as={Link} to='/about/roles' animated basic >
                         <Button.Content visible>See more <Icon name='angle double right'/></Button.Content>
                         <Button.Content hidden><Icon name='arrow right'/></Button.Content>
                     </Button>

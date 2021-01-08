@@ -5,7 +5,7 @@ import {List} from "semantic-ui-react";
 
 const Ambulance = () => <div className='w3-margin-top'>
     <AboutContainer title='Ambulance Services'>
-        <List as='ul' style={{fontSize:'1.33em'}}>
+        <List as='ul' >
             <List.Item>Referral In</List.Item>
             <List.Item>Referral out</List.Item>
             <List.Item>Transport Ambulance</List.Item>

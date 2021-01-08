@@ -19,7 +19,7 @@ const Organogram = () => (
                 <List.Header as='h3'> Medical Superintendent</List.Header>
                 <p> Medical Superintendent is the head of the institution. His responsibilities
                     include:-</p>
-                <List.Item as='ol' style={{fontSize: '1.33em'}}>
+                <List.Item as='ol' >
                     <List.Item as='li' value='-'>
                         Supervision of clinical and administrative functions at the facility.
                     </List.Item>
@@ -34,7 +34,7 @@ const Organogram = () => (
             </List.Item>
             <List.Item>
                 <List.Header as='h3'> Deputy Medical Superintendent</List.Header>
-                <List.Item as='ol' style={{fontSize: '1.33em'}}>
+                <List.Item as='ol' >
                     <List.Item as='li' value='-'>
                         Acts as the principal assistant to the Medical Superintendent performing duties in his absence
                         or under delegation of the Medical Superintendent.
@@ -44,7 +44,7 @@ const Organogram = () => (
 
             <List.Item>
                 <List.Header as='h3'> Nursing officer in charge</List.Header>
-                <List.Item as='ol' style={{fontSize: '1.33em'}}>
+                <List.Item as='ol' >
                     <List.Item as='li' value='-'>
                         Is in charge of all the nurses at the facility and serves as the custodian of nursing care
                         within the institution.
@@ -58,7 +58,7 @@ const Organogram = () => (
 
             <List.Item>
                 <List.Header as='h3'> Hospital Administrator </List.Header>
-                <List.Item as='ol' style={{fontSize: '1.33em'}}>
+                <List.Item as='ol' >
                     <List.Item as='li' value='-'>
                         She serves as the immediate supervisor of administrative functions at the facility.
                         This includes Human Resource, Supply Chain Management, Finance, Transport, Security, Housing,
@@ -70,7 +70,7 @@ const Organogram = () => (
                 </List.Item>
 
             </List.Item>
-             <List.Item as='ol' style={{fontSize: '1.33em'}}>
+             <List.Item as='ol' >
                 <List.Header as='h3'> Head of clinical services</List.Header>
                 <List.Item as='ol'>
                     <List.Item as='li' value='-'>
@@ -106,13 +106,13 @@ const Organogram = () => (
             hospital management team.</p>
         <p>It also acts as the linkage between the hospital and the community.</p>
         <p> The hospital board has <b>2 Sub committees</b></p>
-        <List as='ul' style={{fontSize:"1.33em"}} >
+        <List as='ul'  >
             <List.Item as='li'>Quality of care subcommittee</List.Item>
             <List.Item as='li'>Finance and general purpose subcommittee.</List.Item>
         </List>
 
         <Header as='h43'>Hospital Executive Committee is composed of:-</Header>
-        <List as='ol' style={{fontSize:"1.33em"}}>
+        <List as='ol' >
             <List.Item as='li'>The Medical Superintendent</List.Item>
             <List.Item as='li'>Deputy Medical Superintendent</List.Item>
             <List.Item as='li'>Hospital administrator</List.Item>
@@ -128,7 +128,7 @@ const Organogram = () => (
         </Header>
         <p> The hospital several committees that are tasked with supervising various functions at the hospital.</p>
 
-        <List as='ul' style={{fontSize:"1.33em"}}>
+        <List as='ul' >
             <List.Item as='li'>Transfusion committee – involved with ensuring safe – blood transfusion practicesat the
                 hospital.</List.Item>
             <List.Item as='li'> Training and research committee- Supervise training function including attachment and

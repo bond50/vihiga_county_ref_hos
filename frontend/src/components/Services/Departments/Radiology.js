@@ -6,7 +6,7 @@ import {List} from "semantic-ui-react";
 
 const Radiology = () => <div className='w3-margin-top'>
     <AboutContainer title='Imaging And Radiology Services'>
-        <List as='ul' style={{fontSize:'1.33em'}}>
+        <List as='ul'>
             <List.Item>General Digital X-ray </List.Item>
             <List.Item>Portable Digital X-ray </List.Item>
             <List.Item>Mammography</List.Item>

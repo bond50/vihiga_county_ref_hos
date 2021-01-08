@@ -12,9 +12,14 @@ body {
     line-height: 28px !important;
     text-shadow: 0 0 1px transparent !important;
     background: #efefef url(assets/gray_jean.png) !important;
-
-
 }
+.p {
+    font-size: 1em !important;
+    line-height: 1.4 !important;
+    margin: 10px 0 !important;
+    white-space: pre-wrap !important;
+}
+
 
 
 

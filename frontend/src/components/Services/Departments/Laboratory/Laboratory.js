@@ -1,7 +1,7 @@
 import React from 'react';
 import AboutContainer from "../../../About/AboutContainer";
 import {Header, Table, Label} from "semantic-ui-react";
-import Footer from "../../../Footer/Footer";
+
 
 
 class Laboratory extends React.Component {

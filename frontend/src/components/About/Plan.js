@@ -12,7 +12,7 @@ const Plan = () => <AboutContainer title='VCRH Strategic Plan'>
         with a level 5 referral hospital. They are drawn from the WHO pillars of strengthening health systems.
     </p>
     <h3>The strategic objectives of the strategic plan are:</h3>
-    <List as='ol' style={{fontSize:'1.33em'}}>
+    <List as='ol' >
         <List.Item as='li'>To have an effective and efficient hospital management, leadership and governance
             system.</List.Item>
         <List.Item as='li'>To broaden the scope and enhance the quality of clinical services</List.Item>

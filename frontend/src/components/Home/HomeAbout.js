@@ -1,5 +1,5 @@
 import React from 'react';
-import {Grid, Header, Segment} from "semantic-ui-react";
+import {Grid, Segment} from "semantic-ui-react";
 import {YearsOperated} from "../navigation/desktop/navigationItems/Topbar/YearsOperated/YearsOperated";
 import classes from './HomepageHeading.module.css'
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Divider, Grid, Header, Segment} from "semantic-ui-react";
+import {Divider, Grid, Segment} from "semantic-ui-react";
 import ImageGallaryComponent from "./corousel";
 import classes from "./HomepageHeading.module.css";
 

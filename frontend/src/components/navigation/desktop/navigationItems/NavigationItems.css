@@ -1,16 +1,24 @@
-.ui.pointing.secondary.menu {
-    box-shadow: none !important;
+.ui.tiny.menu {
     flex-wrap: wrap !important;
+}
+
+.ui.tiny.menu .item {
+    font-size: 1.3em !important;
+    text-transform: capitalize !important;
+}
+
+.ui.tiny.top.fixed.nine.item.menu .item:hover {
+    background-color: rgb(44, 199, 62) !important;
+    color: #ffffff;
+
+}
+
+.ui.pointing.secondary.menu{
     background-color: #f5f5f5;
-}
-
-.ui.pointing.secondary.menu .item {
-   font-size: 18px!important;
 
 }
-
-
 .ui.pointing.secondary.menu .item:hover {
+
     color: rgb(44, 199, 62) !important;
 }
 

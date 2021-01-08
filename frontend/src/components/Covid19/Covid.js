@@ -38,14 +38,14 @@ const Covid = () => (
         <Header as='h3'>What are the symptoms of Covid 19 ?</Header>
 
         <p> Most common symptoms:</p>
-        <List as='ol' style={{textTransform: 'capitalize', fontSize: "1.33em"}}>
+        <List as='ol' style={{textTransform: 'capitalize'}}>
             <List.Item as='li' content=' fever'/>
             <List.Item as='li' content=' dry cough'/>
             <List.Item as='li' content=' tiredness'/>
         </List>
 
         <p>Less common symptoms:</p>
-        <List as='ol' style={{textTransform: 'capitalize', fontSize: "1.33em"}}>
+        <List as='ol' style={{textTransform: 'capitalize'}}>
             <List.Item as='li' content=' sore throat'/>
             <List.Item as='li' content='diarrhoea'/>
             <List.Item as='li' content='conjunctivitis'/>
@@ -54,7 +54,7 @@ const Covid = () => (
             <List.Item as='li' content='  a rash on skin, or discolouration of fingers or toes'/>
         </List>
         <p>Serious symptoms:</p>
-        <List as='ol' style={{textTransform: 'capitalize', fontSize: "1.33em"}}>
+        <List as='ol' style={{textTransform: 'capitalize'}}>
             <List.Item as='li' content='difficulty breathing or shortness of breath'/>
             <List.Item as='li' content='chest pain or pressure'/>
             <List.Item as='li' content=' loss of speech or movement'/>
@@ -82,7 +82,7 @@ const Covid = () => (
 
         <Header as='h3'>What can I do to protect myself and others from
             COVID-19 ?</Header>
-        <List as='ol' style={{textTransform: 'capitalize', fontSize: "1.33em"}}>
+        <List as='ol' style={{textTransform: 'capitalize'}}>
             <List.Item as='li'>
                 Cover your cough or sneeze with a tissue, then throw the tissue in the trash.
             </List.Item>
@@ -118,7 +118,7 @@ const Covid = () => (
         <Header as='h3'>Is there a vaccine available ?</Header>
         <p>At the moment there is no vaccine for COVID 19</p>
         <Header as='h3'>How to keep Your Immunity strong ?</Header>
-        <List as='ol' style={{fontSize: "1.33em"}}>
+        <List as='ol' >
             <List.Item as='li' content='Get enough sleep'/>
             <List.Item as='li' content='Avoid smoking'/>
             <List.Item as='li' content='control stress'/>

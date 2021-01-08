@@ -20,7 +20,7 @@ const Posts = ({posts}) => {
                                         </Card.Description>
                                     </Card.Content>
                                     <Card.Content extra>
-                                        <a>
+                                        <a href='/'>
                                             <Icon name='user'/>
                                             {post.content.substr(0, 50)}...
                                         </a>

@@ -6,7 +6,7 @@ import {List, Header} from "semantic-ui-react";
 
 const Pharmacy = () =>
     <AboutContainer title='The Vihiga County Referral Hospital Pharmacy'>
-        <List.Item style={{fontSize:'1.33em'}}>
+        <List.Item >
             The pharmacy team in Vihiga County Referral Hospital is highly skilled and offer professional
             services to
             clients.We offer both outpatient and inpatient services. We dispense standard medicines at
@@ -28,7 +28,7 @@ const Pharmacy = () =>
         <p>We look forward to ensure that all prescribed medicines are available at our pharmacy at better
             discounted prices </p>
         <List.Header as='h3'>Vihiga County referral Hospital Has the following Pharmacy Outlets</List.Header>
-        <List as='ul' style={{fontSize:'1.33em'}}>
+        <List as='ul' >
             <List.Item as='li'>Outpatient Pharmacy</List.Item>
             <List.Item as='li'>NHIF pharmacy</List.Item>
             <List.Item as='li'>Inpatient Pharmacy</List.Item>
