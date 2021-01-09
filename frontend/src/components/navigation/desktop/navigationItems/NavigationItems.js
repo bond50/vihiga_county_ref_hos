@@ -22,7 +22,7 @@ const NavigationItems = ({activeItem, handleItemClick, fixed}) => (
         secondary={!fixed}
         pointing={!fixed}
         size='tiny'
-        widths={9}
+        widths={8}
     >
         <Container>
 

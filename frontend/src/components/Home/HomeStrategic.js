@@ -5,9 +5,9 @@ import image from "../../assets/plan/strategic.jpg";
 import classes from "./HomepageHeading.module.css";
 
 const HomeStrategic = () => {
-    const assignedClasses = [classes.segment, classes.callout, classes.green]
+
     return (
-        <Segment vertical className={assignedClasses.join(' ')} inverted>
+        <Segment vertical className={classes.segment} >
             <Grid stackable divided='vertically' >
                 <Grid.Row>
                     <Grid.Column width={6}>
@@ -26,7 +26,7 @@ const HomeStrategic = () => {
                             up the basis of development of the plan ....
 
                         </p>
-                        <Button as={Link} to='/about/plan' animated inverted >
+                        <Button as={Link} to='/about/plan' animated  >
                             <Button.Content visible> More <Icon name='angle double right'/> </Button.Content>
                             <Button.Content hidden> <Icon name='arrow right'/></Button.Content>
                         </Button>

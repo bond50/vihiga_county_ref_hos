@@ -5,13 +5,12 @@ html {
 body {
     margin: 0 !important;
     padding: 0 0 0 0 !important;
-    color: #000 !important;
     font: 16px "Open Sans", sans-serif !important;
     font-weight: 400 !important;
     font-style: normal !important;
     line-height: 28px !important;
     text-shadow: 0 0 1px transparent !important;
-    background: #efefef url(assets/gray_jean.png) !important;
+    background: #878787 url(assets/gray_jean.png) !important;
 }
 .p {
     font-size: 1em !important;

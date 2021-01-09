@@ -10,7 +10,7 @@ function DesktopContainer({children}) {
     return (
         <Media greaterThan='mobile'>
             <DeskTopNav/>
-            <Container>
+            <Container >
                 {children}
             </Container>
             <Footer/>

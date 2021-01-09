@@ -3,9 +3,9 @@
     position: absolute;
     right: 0;
     top: 0;
-    border-width: 5vh 0 0 50vw;
+    border-width: 3vh 0 0 50vw;
     border-style: solid;
-    border-color: #002e2e transparent transparent transparent;
+    border-color: #efefef  transparent transparent transparent;
 }
 
 .sesgoarriba-small {
@@ -13,19 +13,23 @@
     position: absolute;
     left: 0;
     top: 0;
-    border-width: 5vh 50vw 0 0;
+    border-width: 3vh 50vw 0 0;
     border-style: solid;
-    border-color: #002e2e transparent transparent transparent;
+    border-color: #efefef transparent transparent transparent;
+}
+.pattern{
+    background-color: #343434 !important;
+    color: #bebebe;
 }
 
-.pattern {
-    background: radial-gradient(black 15%, transparent 16%) 0 0,
-    radial-gradient(black 15%, transparent 16%) 8px 8px,
-    radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 0 1px,
-    radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 8px 9px !important;
-    background-color: #012524 !important;
-    background-size: 16px 16px !important;
-}
+/*.pattern {*/
+/*    background: radial-gradient(black 15%, transparent 16%) 0 0,*/
+/*    radial-gradient(black 15%, transparent 16%) 8px 8px,*/
+/*    radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 0 1px,*/
+/*    radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 8px 9px !important;*/
+/*    background-color: #2cc72e !important;*/
+/*    */
+/*}*/
 
 .fixedBtn{
     position: fixed;

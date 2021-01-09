@@ -19,7 +19,7 @@
 }
 .nav-image {
     background-image: url(imange.png);
-    height: 440px;
+    height: 100px;
     opacity: 0.8;
     background-position: center;
     background-size: cover;

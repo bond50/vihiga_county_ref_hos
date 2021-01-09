@@ -57,13 +57,15 @@
 
 .navImage {
     background-image: url(imange.png);
-    height: 455px;
+    height: 400px;
     opacity: 0.8;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-
+.homeContainer{
+    max-width: 100%;
+}
 .navImage:hover {
     opacity: 0.6;
 }
