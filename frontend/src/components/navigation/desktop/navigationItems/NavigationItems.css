@@ -11,7 +11,7 @@
 }
 
 .ui.tiny.top.fixed.eight.item.menu .item:hover {
-    background-color: rgb(44, 199, 62) !important;
+    background-color: rgba(0,0,0,0.6) !important;
     color: #ffffff;
 
 }

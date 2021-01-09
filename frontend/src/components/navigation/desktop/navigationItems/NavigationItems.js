@@ -5,8 +5,8 @@ import {connect} from "react-redux";
 import {about, covid, media, services,} from "./links/links";
 import NavLink from "./links/Link";
 import './NavigationItems.css';
-// import Logo from "./Logo/Logo";
 
+// import Logo from "./Logo/Logo";
 
 
 function mapStateToProps(state) {
@@ -23,10 +23,12 @@ const NavigationItems = ({activeItem, handleItemClick, fixed}) => (
         pointing={!fixed}
         size='tiny'
         widths={8}
+        inverted={fixed}
+        style={{backgroundColor: fixed ? 'rgb(44,199,46)' : '#fff'}}
     >
         <Container>
 
-               {/*<Logo />*/}
+            {/*<Logo />*/}
 
             <NavLink
                 to='/'
