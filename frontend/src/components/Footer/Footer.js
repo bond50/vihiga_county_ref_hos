@@ -170,11 +170,11 @@ const Footer = () => {
                     </Grid>
                     <Divider inverted section/>
                     <p>
-                        Copyright <Icon name='copyright outline' /> 2020 - {thisYear}  Vihiga County Referral Hospital, Inc. All rights reserved
+                        Copyright <Icon name='copyright outline'/> 2020 - {thisYear}  Vihiga County Referral Hospital, Inc. All rights reserved
                     </p>
                     <div className='fixedBtn'>
                         <Button icon='angle up'
-                                size='largenpm'
+                                size='large'
                                 circular
                                 floated={"right"}
                                 as='a'

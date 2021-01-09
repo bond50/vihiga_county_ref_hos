@@ -5,7 +5,7 @@ import classes from "./HomepageHeading.module.css";
 
 const HomeWelcome = () => (
          <Segment vertical className={classes.segment}>
-            <Grid stackable verticalAlign='middle' divided='vertically' >
+            <Grid stackable divided='vertically'  >
                 <Grid.Row className={classes.row}>
                     <Grid.Column width={10}>
                         < h1 className={classes.header} >
