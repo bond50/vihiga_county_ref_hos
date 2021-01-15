@@ -1,5 +1,5 @@
 import React, {Fragment, useEffect, useState} from "react";
-import {Button, Form} from "semantic-ui-react";
+import {Button, Container, Form, Icon, Message, Segment} from "semantic-ui-react";
 import classes from './contact.module.css';
 import axiosInstance from "../axios/axios";
 
@@ -65,13 +65,42 @@ const Contact = () => {
 
 
     };
-    const showLoading = () => (loading ? <div>Loading...</div> : '')
+    const showLoadingButton = () => (
+        !loading ?
+            <Button
+                type='submit'
+                primary
+                size='large'
+                fluid
+                style={{textTransform: 'uppercase'}}>Submit</Button> :
+            <Button
+                loading
+                primary
+                size='large'
+                fluid>Loading</Button>)
     const showError = () => (err ? <div>{err}</div> : '')
-    const showSuccessMessage = () => (successMessage ? <div>{successMessage}</div> : '')
+    const showSuccessMessage = () => (
+        successMessage ?
+            <Segment>
+                <Message icon color='green'>
+                    <Icon color='green' name='checkmark box'/>
+                    <Message.Content>
+                        {successMessage}
+                    </Message.Content>
+                </Message>
+            </Segment> :
+            ''
+
+    )
 
 
     const contactForm = () => (<Fragment>
-            <h2>Contact us</h2>
+            {successMessage ? <Message icon color='green'>
+                <Icon color='green' name='checkmark box'/>
+                <Message.Content>
+                    {successMessage}
+                </Message.Content>
+            </Message> : <h2>Contact Us</h2>}
             <p>Feel free to get in touch with us . We shall get back to you as soon as possible</p>
 
 
@@ -120,20 +149,21 @@ const Contact = () => {
                         onChange={handleChange}
                         value={message}/>
                 </Form.Field>
-                <Button type='submit'>Submit</Button>
+                {showLoadingButton()}
             </Form>
         </Fragment>
 
     );
     return (
-        <div className={classes.body}>
-            <div className={classes.container}>
-                {showSuccessMessage()}
-                {showError()}
-                {showLoading()}
-                {showForm && contactForm()}
+        <Fragment>
+            {showSuccessMessage()}
+            <div className={classes.body}>
+                <div className={classes.container}>
+                    {showError()}
+                    {contactForm()}
+                </div>
             </div>
-        </div>
+        </Fragment>
     );
 };
 
