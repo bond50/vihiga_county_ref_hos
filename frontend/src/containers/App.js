@@ -1,7 +1,7 @@
 import React from 'react';
 import {BrowserRouter, Switch, Route} from "react-router-dom";
 import HomepageLayout from "../components/Home/HomePageLayOut";
-import Contact from "../components/Contact/contactPageLayout";
+
 import ScrollToTop from "../components/scrollTop";
 import Covid from "../components/Covid19/Covid";
 import Roles from "../components/About/Roles";
@@ -41,6 +41,7 @@ import Signup from "../components/auth/signup";
 import Login from "../components/auth/login";
 import Logout from "../components/auth/logout";
 import ResponsiveContainer from "../hocs/Responsive/ResponsiveContainer";
+import Contact from "../components/Contact/Contact";
 
 
 const App = () => {

@@ -1,0 +1,31 @@
+.body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container {
+    width: 500px;
+    max-width: 500px;
+    padding-bottom: 2em;
+    border-radius: 10px;
+}
+
+.container h2 {
+    text-align: center;
+    margin-top: 2em!important;
+    font-weight: 800 !important;
+    font-size: 30px !important;
+
+}
+
+.container p {
+    text-align: center;
+    margin: 15px 20px;
+
+}
+.form{
+    margin: 0 30px!important;
+
+}
