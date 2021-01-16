@@ -1,11 +1,11 @@
 import React from 'react';
-import {Segment, Visibility} from 'semantic-ui-react';
+import {Grid, Visibility} from 'semantic-ui-react';
 import {connect} from 'react-redux'
 import {removeFixedNav, setFixedNav} from "../../../store/actions/nav";
 import {withRouter} from "react-router-dom";
 import NavigationItems from "./navigationItems/NavigationItems";
 import TopBar from "./navigationItems/Topbar/TopBar";
-
+import classes from './styles.module.css'
 
 
 const DeskTopNav = ({setFixedNav, removeFixedNav, handleItemClick, active}) => (
@@ -16,20 +16,12 @@ const DeskTopNav = ({setFixedNav, removeFixedNav, handleItemClick, active}) => (
             onBottomPassed={() => (setFixedNav())}
             onBottomPassedReverse={() => (removeFixedNav())}
         >
-            <Segment
-                textAlign='center'
-                style={{padding: '0'}}
-                vertical
-
-            >
-
+            <Grid padded className={classes.segment}>
                 <NavigationItems
                     handleItemClick={handleItemClick}
                     activeItem={active}/>
-            </Segment>
+            </Grid>
         </Visibility>
-
-
     </>
 );
 

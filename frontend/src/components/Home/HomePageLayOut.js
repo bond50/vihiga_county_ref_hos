@@ -1,23 +1,24 @@
 import React from 'react';
-import HomepageHeading from "./HomepageHeading";
-
-import HomeAbout from "./HomeAbout";
-import HomeAchieved from "./HomeAchieved";
+import HomeAchieved from "./Achieved/HomeAchieved";
 import HomeStrategic from "./HomeStrategic";
 import HomePrincipals from "./HomePrincipals";
-import HomeWelcome from "./HomeWelcome";
+import HomeWelcome from "./Welcome/HomeWelcome";
 import HomeRoles from "./HomeRoles";
+import Heading from "./Heading/Heading";
+import {Container} from "semantic-ui-react";
+import classes from './HomepageHeading.module.css'
 
 
 const HomepageLayout = () => (
-         <React.Fragment>
-            <HomepageHeading/>
-            <HomeWelcome/>
-            <HomeAbout/>
-            <HomeAchieved/>
-            <HomeStrategic/>
-            <HomePrincipals/>
-            <HomeRoles/>
+        <React.Fragment>
+            <Heading/>
+            <Container className={classes.content}>
+                <HomeWelcome/>
+                <HomeAchieved/>
+                <HomeStrategic/>
+                <HomePrincipals/>
+                <HomeRoles/>
+            </Container>
         </React.Fragment>
     )
 ;

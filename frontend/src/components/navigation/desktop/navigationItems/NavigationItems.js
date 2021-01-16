@@ -6,7 +6,6 @@ import {about, covid, media, services,} from "./links/links";
 import NavLink from "./links/Link";
 import './NavigationItems.css';
 
-// import Logo from "./Logo/Logo";
 
 
 function mapStateToProps(state) {
@@ -19,19 +18,24 @@ function mapStateToProps(state) {
 const NavigationItems = ({activeItem, handleItemClick, fixed}) => (
     <Menu
         fixed={fixed ? 'top' : null}
-        secondary={!fixed}
-        pointing={!fixed}
-        size='tiny'
-        widths={8}
-        inverted={fixed}
-        style={{backgroundColor: fixed ? 'rgb(44,199,46)' : '#fff'}}
+        pointing
+        size='huge'
+        borderless
+        widths={9}
+        inverted
+        className={fixed?'fixedStyle':'notFixedStyle'}
+
     >
         <Container>
 
             {/*<Logo />*/}
 
+            <Menu.Item header as='a' >
+                VCRH
+            </Menu.Item>
             <NavLink
                 to='/'
+
                 handleItemClick={handleItemClick}
                 name='home'
                 activeItem={activeItem === 'home'}>
@@ -103,6 +107,7 @@ const NavigationItems = ({activeItem, handleItemClick, fixed}) => (
             </Dropdown>
         </Container>
     </Menu>
+
 
 );
 

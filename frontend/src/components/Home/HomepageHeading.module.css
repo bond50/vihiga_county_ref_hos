@@ -8,6 +8,12 @@
     padding-top: 0 !important;
 }
 
+.content {
+    padding: 3em 0 0 0;
+    position: relative;
+    margin-bottom: 30px;
+}
+
 .segment .h1 {
     font-family: Merriweather, serif;
     font-size: 24px;
@@ -21,14 +27,6 @@
     line-height: 1.4 !important;
     margin: 10px 0 !important;
     white-space: pre-wrap !important;
-}
-
-.segmentAfterNav {
-    border: 1px solid #ccc !important;
-    padding: 1px 0 !important;
-    position: relative !important;
-    background: #fff !important;
-    margin-bottom: 30px !important;
 }
 
 
@@ -52,48 +50,10 @@
     border-color: #ffffff transparent transparent transparent;
 }
 
-.navImage {
-    background-image: url(imange.png);
-    height: 400px;
-    opacity: 0.8;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.homeContainer{
+.homeContainer {
     max-width: 100%;
 }
-.navImage:hover {
-    opacity: 0.6;
-}
 
-
-.myHeader {
-    letter-spacing: normal;
-    background: #0093da;
-    text-transform: uppercase;
-    animation-name: text;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-}
-
-
-@keyframes text {
-    0% {
-        color: black;
-        margin-bottom: -40px;
-
-    }
-    30% {
-        letter-spacing: 25px;
-        margin-bottom: -40px;
-    }
-    85% {
-        letter-spacing: 8px;
-        margin-bottom: -40px;
-    }
-
-}
 
 .callout {
     background: url(gplaypattern.png) repeat !important;
@@ -106,6 +66,7 @@
 .blue {
     background-color: #3b5998 !important;
 }
-.grey{
-       background-color: #dcdcdc !important;
+
+.grey {
+    background-color: #dcdcdc !important;
 }

@@ -1,9 +1,9 @@
 import React from "react";
 import './corousel.css';
-import img1 from '../../assets/carousel/one.JPG'
-import img2 from '../../assets/carousel/two.JPG'
-import img3 from '../../assets/carousel/renal.JPG'
-import img4 from '../../assets/carousel/three.JPG'
+import img1 from '../../../assets/carousel/one.JPG'
+import img2 from '../../../assets/carousel/two.JPG'
+import img3 from '../../../assets/carousel/renal.JPG'
+import img4 from '../../../assets/carousel/three.JPG'
 
 import {Carousel} from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";

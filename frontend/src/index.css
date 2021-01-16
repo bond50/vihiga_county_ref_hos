@@ -1,9 +1,6 @@
-html {
-    scroll-behavior: smooth !important;
-}
 
 body {
-    font: 16px "Open Sans", sans-serif !important;
+    font-family: "Open Sans", sans-serif !important;
     font-style: normal !important;
     text-shadow: 0 0 1px transparent !important;
     background: #878787 url(assets/gray_jean.png) !important;

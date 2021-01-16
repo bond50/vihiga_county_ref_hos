@@ -1,27 +1,28 @@
-.ui.tiny.menu {
+
+.ui.menu .item {
+    text-transform: uppercase !important;
+    font-size: 14px;
+    font-weight: 600;
     flex-wrap: wrap !important;
 }
+.ui.menu .item:first-child {
+    font-size: 1.5em;
+    font-weight: 800 !important;
+}
 
-.ui.tiny.menu .item {
-    text-transform: capitalize !important;
-    font-size: 14px !important;
-    font-weight: 600 !important;
-    font-family: "Open Sans", sans-serif !important;
+
+
+
+.fixedStyle {
+    /*background-color: #2185d0 !important;*/
+    background-color: #2cc72e!important;
+    border: none !important;
+    box-shadow: none !important;
 
 }
 
-.ui.tiny.top.fixed.eight.item.menu .item:hover {
-    background-color: rgba(0,0,0,0.6) !important;
-    color: #ffffff;
-
+.notFixedStyle {
+    background-color: #0765bc !important;
+    box-shadow: none!important;
+    border: none!important;
 }
-
-.ui.pointing.secondary.menu{
-    background-color: #f5f5f5;
-
-}
-.ui.pointing.secondary.menu .item:hover {
-
-    color: rgb(44, 199, 62) !important;
-}
-

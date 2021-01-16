@@ -4,9 +4,12 @@ import MobileContainer from "../../containers/Mobile/MobileContainer";
 import PropTypes from 'prop-types'
 import {MediaContextProvider} from "../FresnelMedia/CreateMedia";
 
+
 const ResponsiveContainer = ({children}) => (
     <MediaContextProvider>
-        <DesktopContainer>{children}</DesktopContainer>
+        <DesktopContainer >
+            {children}
+        </DesktopContainer>
         <MobileContainer>{children}</MobileContainer>
     </MediaContextProvider>
 )

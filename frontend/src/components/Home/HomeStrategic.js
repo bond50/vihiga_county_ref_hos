@@ -10,11 +10,11 @@ const HomeStrategic = () => {
         <Segment vertical className={classes.segment} >
             <Grid stackable divided='vertically' >
                 <Grid.Row>
-                    <Grid.Column width={6}>
+                    <Grid.Column width={6} style={{backgroundColor:'#ffffff',padding:'1em'}}>
                         <Image src={image}/>
                     </Grid.Column>
-                    <Grid.Column width={10} floated='right'>
-                        <Header as='h2' inverted>
+                    <Grid.Column width={10} floated='right' style={{backgroundColor:'#ffffff',padding:'1em'}}>
+                        <Header as='h2' >
                             Strategic plan 2018-2022
                         </Header>
                         <Divider hidden/>
@@ -26,6 +26,8 @@ const HomeStrategic = () => {
                             up the basis of development of the plan ....
 
                         </p>
+                        <Divider hidden></Divider>
+                        <Divider hidden></Divider>
                         <Button as={Link} to='/about/plan' animated  >
                             <Button.Content visible> More <Icon name='angle double right'/> </Button.Content>
                             <Button.Content hidden> <Icon name='arrow right'/></Button.Content>

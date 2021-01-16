@@ -1,11 +1,11 @@
 import React from 'react';
 import {Button, Icon, Segment} from "semantic-ui-react";
 import {Link} from "react-router-dom";
-import classes from "./HomepageHeading.module.css";
+import classes from "../HomepageHeading.module.css";
 
 const HomeAchieved = () => (
              <Segment vertical className={classes.segment}>
-                <h1 className={classes.header}>
+                <h1 >
                     How we achieved as a department
                 </h1>
                 <p>

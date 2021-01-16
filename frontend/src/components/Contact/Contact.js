@@ -1,7 +1,10 @@
-import React, {Fragment, useEffect, useState} from "react";
-import {Button, Container, Form, Icon, Message, Segment} from "semantic-ui-react";
+import React, {Fragment, useState} from "react";
+import {Button, Form, Icon, Message, Segment} from "semantic-ui-react";
 import classes from './contact.module.css';
 import axiosInstance from "../axios/axios";
+
+import ContactHeading from "./Heading/ContactHeading";
+import {useHistory} from "react-router";
 
 
 const initialValues = {
@@ -17,6 +20,7 @@ const initialValues = {
 }
 
 const Contact = () => {
+    const history = useHistory();
     const [values, setValues] = useState(initialValues);
 
     const {firstname, lastname, email, subject, message, successMessage, showForm, loading, err} = values
@@ -33,6 +37,7 @@ const Contact = () => {
         })
     };
     const handleSubmit = () => {
+
         setValues({
             ...values, loading: true, err: false,
         })
@@ -55,13 +60,15 @@ const Contact = () => {
                     loading: false,
                     err: ''
                 })
-                console.log(res)
-            }).catch((err => {
-            setValues({
-                ...values, loading: false, err: err,
+                history.push('/contact')
+
             })
-            console.log(err.message)
-        }));
+            .catch((err => {
+                setValues({
+                    ...values, loading: false, err: "Something wrong", showForm: false
+                })
+                console.log(err.message)
+            }));
 
 
     };
@@ -79,31 +86,23 @@ const Contact = () => {
                 size='large'
                 fluid>Loading</Button>)
     const showError = () => (err ? <div>{err}</div> : '')
-    const showSuccessMessage = () => (
-        successMessage ?
-            <Segment>
-                <Message icon color='green'>
-                    <Icon color='green' name='checkmark box'/>
-                    <Message.Content>
-                        {successMessage}
-                    </Message.Content>
-                </Message>
-            </Segment> :
-            ''
-
-    )
-
-
-    const contactForm = () => (<Fragment>
-            {successMessage ? <Message icon color='green'>
-                <Icon color='green' name='checkmark box'/>
-                <Message.Content>
-                    {successMessage}
-                </Message.Content>
-            </Message> : <h2>Contact Us</h2>}
-            <p>Feel free to get in touch with us . We shall get back to you as soon as possible</p>
+    // const showSuccessMessage = () => (
+    //     successMessage ?
+    //         <Segment>
+    //             <Message icon color='green'>
+    //                 <Icon color='green' name='checkmark box'/>
+    //                 <Message.Content>
+    //                     {successMessage}
+    //                 </Message.Content>
+    //             </Message>
+    //         </Segment> :
+    //         ''
+    //
+    // )
 
 
+    const contactForm = () => (
+        <Fragment>
             <Form className={classes.form} onSubmit={handleSubmit}>
                 <Form.Field>
                     <label>First Name</label>
@@ -156,11 +155,11 @@ const Contact = () => {
     );
     return (
         <Fragment>
-            {showSuccessMessage()}
+            <ContactHeading title={successMessage ? "Message Sent Successfully" : 'Contact us'}/>
             <div className={classes.body}>
                 <div className={classes.container}>
                     {showError()}
-                    {contactForm()}
+                    {showForm && contactForm()}
                 </div>
             </div>
         </Fragment>
