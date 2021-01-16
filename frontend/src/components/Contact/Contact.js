@@ -86,19 +86,7 @@ const Contact = () => {
                 size='large'
                 fluid>Loading</Button>)
     const showError = () => (err ? <div>{err}</div> : '')
-    // const showSuccessMessage = () => (
-    //     successMessage ?
-    //         <Segment>
-    //             <Message icon color='green'>
-    //                 <Icon color='green' name='checkmark box'/>
-    //                 <Message.Content>
-    //                     {successMessage}
-    //                 </Message.Content>
-    //             </Message>
-    //         </Segment> :
-    //         ''
-    //
-    // )
+
 
 
     const contactForm = () => (
