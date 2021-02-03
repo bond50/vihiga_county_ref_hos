@@ -1,0 +1,11 @@
+.megamenu {
+    background-color: #efefef;
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: none;
+    z-index: 500;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 0;
+}

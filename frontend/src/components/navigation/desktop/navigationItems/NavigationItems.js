@@ -1,12 +1,8 @@
 import React from 'react';
-import {Container, Dropdown, Menu} from "semantic-ui-react";
+import './NavigationItems.css'
+import {Container, Header, Menu} from "semantic-ui-react";
 import {connect} from "react-redux";
-
-import {about, covid, media, services,} from "./links/links";
-import NavLink from "./links/Link";
-import './NavigationItems.css';
-
-
+import {Link} from "react-router-dom";
 
 function mapStateToProps(state) {
     return {
@@ -15,100 +11,76 @@ function mapStateToProps(state) {
 }
 
 
-const NavigationItems = ({activeItem, handleItemClick, fixed}) => (
+const NavigationItems = ({handleToggleDropdownMenu, dropdownMenuStyle, fixed}) => (
     <Menu
         fixed={fixed ? 'top' : null}
-        pointing
+        inverted={fixed}
+        pointing={!fixed}
+        secondary={!fixed}
         size='huge'
-        borderless
-        widths={9}
-        inverted
-        className={fixed?'fixedStyle':'notFixedStyle'}
-
     >
         <Container>
-
-            {/*<Logo />*/}
-
-            <Menu.Item header as='a' >
+            <Menu.Item header as={Link} to='/'>
                 VCRH
             </Menu.Item>
-            <NavLink
-                to='/'
-
-                handleItemClick={handleItemClick}
-                name='home'
-                activeItem={activeItem === 'home'}>
-                home
-            </NavLink>
-            <Dropdown
-                item
-                text='About'
-                name='about'
-                activeItem={activeItem === 'about'}
-                onClick={handleItemClick}>
-                <Dropdown.Menu>
-                    {about()}
-                </Dropdown.Menu>
-            </Dropdown>
-
-            <Dropdown
-                item
-                text='Services'
-                name='services'
-                activeItem={activeItem === 'services'}
-                onClick={handleItemClick}>
-                <Dropdown.Menu>
-                    {services()}
-                </Dropdown.Menu>
-            </Dropdown>
-            <Dropdown
-                item
-                text='Media'
-                name='Media'
-                activeItem={activeItem === 'media'}
-                onClick={handleItemClick}>
-                <Dropdown.Menu>
-                    {media()}
-                </Dropdown.Menu>
-            </Dropdown>
-
-            <NavLink
-                to='/training'
-                handleItemClick={handleItemClick}
-                name='training'
-                activeItem={activeItem === 'training'}>
-                training
-            </NavLink>
-
-            <NavLink
-                to='/tenders'
-                handleItemClick={handleItemClick}
-                name='tenders'
-                activeItem={activeItem === 'tenders'}>
-                tenders
-            </NavLink>
-            <NavLink
-                to='/contact'
-                handleItemClick={handleItemClick}
-                name='contact'
-                activeItem={activeItem === 'contact'}>
-                contact us
-            </NavLink>
-            <Dropdown
-                item
-                text='Covid'
-                name='covid'
-                activeItem={activeItem === 'covid'}
-                onClick={handleItemClick}>
-                <Dropdown.Menu>
-                    {covid()}
-                </Dropdown.Menu>
-            </Dropdown>
+            <div className="dropdown" onClick={handleToggleDropdownMenu}>
+                <a className="item">Mega menu<i className="dropdown icon"/></a>
+                <div style={dropdownMenuStyle} className='megamenu'>
+                    <Container>
+                        <div className="ui four column relaxed equal height divided doubling grid">
+                            <div className="column">
+                                <Header as='h4'>Gab</Header>
+                                <div className="ui link list">
+                                    <a className="item">Viscose</a>
+                                </div>
+                                <Header as='h4'>Gab</Header>
+                                <div className="ui link list">
+                                    <a className="item">Cashmere</a>
+                                    <a className="item">Linen</a>
+                                    <a className="item">Cotton</a>
+                                </div>
+                            </div>
+                            <div className="column">
+                                <Header as='h4'>Gab</Header>
+                                <div className="ui link list">
+                                    <a className="item">Small</a>
+                                    <a className="item">Medium</a>
+                                    <a className="item">Large</a>
+                                    <a className="item">Plus Sizes</a>
+                                </div>
+                            </div>
+                            <div className="column">
+                                <Header as='h4'>Gab</Header>
+                                <div className="ui link list">
+                                    <a className="item">Neutrals</a>
+                                    <a className="item">Brights</a>
+                                    <a className="item">Pastels</a>
+                                </div>
+                            </div>
+                            <div className="column">
+                                <Header as='h4'>Gab</Header>
+                                <div className="ui link list">
+                                    <a className="item">Knitwear</a>
+                                    <a className="item">Outerwear</a>
+                                    <a className="item">Pants</a>
+                                    <a className="item">Shoes</a>
+                                </div>
+                            </div>
+                        </div>
+                    </Container>
+                </div>
+            </div>
+            <div>
+                <a className="item">
+                    Item 1
+                </a>
+            </div>
         </Container>
+
     </Menu>
 
 
-);
+)
+
 
 export default connect(mapStateToProps)(NavigationItems);

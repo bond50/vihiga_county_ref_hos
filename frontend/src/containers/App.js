@@ -40,14 +40,14 @@ import Blog from "../components/blog/Blog";
 import Signup from "../components/auth/signup";
 import Login from "../components/auth/login";
 import Logout from "../components/auth/logout";
-import ResponsiveContainer from "../hocs/Responsive/ResponsiveContainer";
+import Layout from "../hocs/Layout/Layout";
 import Contact from "../components/Contact/Contact";
 
 
 const App = () => {
     return (
         <BrowserRouter>
-                <ResponsiveContainer>
+                <Layout>
                     <ScrollToTop>
                         <Switch>
                             <Route path='/' exact component={HomepageLayout}/>
@@ -97,7 +97,7 @@ const App = () => {
                             <Route component={NotFound}/>
                         </Switch>
                     </ScrollToTop>
-                </ResponsiveContainer>
+                </Layout>
 
         </BrowserRouter>
     )
