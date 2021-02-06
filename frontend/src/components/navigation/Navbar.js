@@ -1,13 +1,15 @@
 import React, {useState} from 'react';
-import {Segment, Visibility} from 'semantic-ui-react';
+import {Grid, Segment, Visibility} from 'semantic-ui-react';
 import {connect} from 'react-redux'
-import {removeFixedNav, setFixedNav} from "../../../store/actions/nav";
+import {removeFixedNav, setFixedNav} from "../../store/actions/nav";
 import {withRouter} from "react-router-dom";
 
 
-import TopBar from "./navigationItems/Topbar/TopBar";
-import NavigationItems from "./navigationItems/NavigationItems";
-
+import TopBar from "./desktop/navigationItems/Topbar/TopBar";
+import NavigationItems from "./desktop/navigationItems/NavigationItems";
+import Desktop from "./desktop/Desktop";
+import Mobile from "./mobile/Mobile";
+import './Navbar.css'
 
 const Navbar = ({setFixedNav, removeFixedNav}) => {
 
@@ -20,7 +22,7 @@ const Navbar = ({setFixedNav, removeFixedNav}) => {
     const handleToggleDropdownMenu = () => {
         let newState = {...state};
         if (newState.dropdownMenuStyle.display === "none") {
-            newState.dropdownMenuStyle = {display: "block"};
+            newState.dropdownMenuStyle = {display: "flex"};
         } else {
             newState.dropdownMenuStyle = {display: "none"};
         }
@@ -36,7 +38,8 @@ const Navbar = ({setFixedNav, removeFixedNav}) => {
                 onBottomPassed={() => (setFixedNav())}
                 onBottomPassedReverse={() => (removeFixedNav())}
             >
-                <NavigationItems dropdownMenuStyle={state.dropdownMenuStyle} handleToggleDropdownMenu={handleToggleDropdownMenu}/>
+               <Desktop/>
+               <Mobile dropMenuStyle={state.dropdownMenuStyle} handleDropToggleDropdownMenu={handleToggleDropdownMenu}/>
             </Visibility>
         </>
     );

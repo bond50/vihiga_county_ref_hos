@@ -1,0 +1,23 @@
+.ui.mobile.only.grid .ui.menu .ui.vertical.menu {
+  display: none;
+}
+
+.ui.mobile.only.grid .ui.vertical.menu .dropdown.icon {
+  float: unset;
+}
+
+.ui.mobile.only.grid .ui.vertical.menu .dropdown.icon:before {
+  content: "\f0d7";
+}
+
+.ui.mobile.only.grid .ui.vertical.menu .ui.dropdown.item .menu {
+  position: static;
+  width: 100%;
+  background-color: unset;
+  border: none;
+  box-shadow: none;
+}
+
+.ui.mobile.only.grid .ui.vertical.menu .ui.dropdown.item .menu {
+  margin-top: 6px;
+}
