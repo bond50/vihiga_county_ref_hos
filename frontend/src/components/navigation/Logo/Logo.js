@@ -1,6 +1,6 @@
 import React from 'react';
 import {myStyles} from './Logo.module.css';
-import logo from '../../../../../assets/logo/lognobg.png';
+import logo from '../../../../assets/logo/lognobg.png';
 
 
 
