@@ -12,8 +12,8 @@ const HomepageLayout = () => (
         <React.Fragment>
             <div className={classes.segmentClass}>
             </div>
+             <HomeWelcome/>
             <Container className={classes.content}>
-                <HomeWelcome/>
                 <HomeAchieved/>
                 <HomeStrategic/>
                 <HomePrincipals/>

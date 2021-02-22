@@ -5,10 +5,10 @@ import classes from  '../HomepageHeading.module.css';
 
 const HomeAchieved = () => (
              <Segment vertical className={classes.segment}>
-                <h1 >
+               <h1 className={classes.header}>
                     How we achieved as a department
                 </h1>
-                <p>
+                <p className={classes.myp}>
                     The department of health services developed a county
                     health
                     strategic plan for 2018-2022 which provides a road map of how the Health Department
@@ -17,7 +17,7 @@ const HomeAchieved = () => (
                     provide Health Services in an enabling environment.</p>
 
 
-                <Button as={Link} to='/about/plan' animated>
+                <Button as={Link} to='/about/plan' animated >
                     <Button.Content visible>See more </Button.Content>
                     <Button.Content hidden><Icon name='arrow right'/></Button.Content>
                 </Button>

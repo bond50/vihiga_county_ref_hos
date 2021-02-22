@@ -5,10 +5,7 @@ body {
 }
 
 
-
-
-
-
-
-
-
+.ui.button{
+    background-color: #8ccf69!important;
+    color: #fefefe!important;
+}

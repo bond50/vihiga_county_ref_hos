@@ -1,9 +1,40 @@
 .segment {
     padding: 2em 2.5% !important;
     margin-bottom: 60px !important;
-    background-color: #fefefe!important;
+    background-color: #f6f6f6 !important;
 }
 
+.segmentYellow {
+    padding: 1.5em 2.5% !important;
+    margin-bottom: 60px !important;
+    background-color: #f4f43f !important;
+}
+
+.header {
+    text-transform: capitalize;
+    color: #a55d1e;
+    font-family: 'Merriweather', sans-serif;
+    font-size: 1.7em;
+    font-weight: bold;
+    letter-spacing: -1px;
+    line-height: 1;
+
+}
+
+.welcomeHeader {
+    font-size: 2em;
+    text-transform: uppercase;
+    color: #111;
+    font-family: 'Merriweather', sans-serif;
+    font-weight: 800;
+    letter-spacing: -1px;
+    line-height: 1.5;
+}
+
+
+.myp {
+    font-size: 1.5em !important;
+}
 
 
 .content {
@@ -17,10 +48,10 @@
     text-align: left;
     background-image: url('../../assets/home/home.png');
     color: #ffffff;
-    height: 70vh;
+    height: 80vh;
     background-position: center center;
     background-attachment: fixed;
-    opacity: 0.9;
+    opacity: 0.7;
     background-size: cover;
     background-color: #464646;
     background-repeat: no-repeat;

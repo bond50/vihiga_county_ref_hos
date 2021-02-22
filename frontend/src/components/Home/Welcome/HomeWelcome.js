@@ -1,16 +1,16 @@
 import React from 'react';
 import {Button, Divider, Grid, Icon, Segment} from "semantic-ui-react";
 import ImageGallaryComponent from "../Slider/corousel";
-import classes from "./HomeWelcome.module.css";
+import classes from "../HomepageHeading.module.css";
 import {YearsOperated} from "../../navigation/Topbar/YearsOperated/YearsOperated";
 import {Link} from "react-router-dom";
 
 const HomeWelcome = () => (
-    <Segment vertical className={classes.segment}>
-        <Grid stackable divided='vertically' relaxed>
-            <Grid.Row className={classes.row} >
-                <Grid.Column width={10} className={classes.col}>
-                    <h1>
+    <Segment vertical className={classes.segmentYellow}>
+        <Grid stackable divided='vertically' relaxed container>
+            <Grid.Row >
+                <Grid.Column width={10} >
+                    <h1 className={classes.welcomeHeader}>
                         Welcome To Vihiga County Referral Hospital
                     </h1>
                     <p>Vihiga County Referral Hospital (VCRH) has offered services to the people of Vihiga and its
@@ -31,7 +31,7 @@ const HomeWelcome = () => (
                         Constitution 2010.
                     </p>
                 </Grid.Column>
-                <Grid.Column width={6} floated='right' className={classes.col}>
+                <Grid.Column width={6} floated='right' >
                     <ImageGallaryComponent/>
                     <Divider/>
                     <Button primary animated fluid as={Link} to='/media-center/gallery'>
