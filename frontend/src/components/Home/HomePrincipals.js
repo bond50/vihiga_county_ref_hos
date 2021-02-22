@@ -6,7 +6,7 @@ import classes from "./HomepageHeading.module.css";
 const HomePrincipals = () => {
 
     return (
-        <Segment inverted  vertical className={classes.segment} style={{backgroundColor: '#2185d0'}}>
+        <Segment inverted  vertical className={classes.segment} style={{backgroundColor: '#f4f43f'}}>
             <Grid stackable columns='equal'>
                 <Grid.Column
                     style={{backgroundColor: '#2cc72e', marginRight: '1em', padding: '3em', textAlign: 'center'}}>

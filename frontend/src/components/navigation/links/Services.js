@@ -14,6 +14,7 @@ const Services = ({clicked}) => {
         {text: 'Ambulance', to: '/services/departments/ambulance'},
         {text: 'Nursing Services', to: '/services/departments/nursing'},
         {text: 'Health Records', to: '/services/departments/records'},
+        {text: 'Biomedical Engineering', to: '/services/departments/bengineering'},
 
     ]
 

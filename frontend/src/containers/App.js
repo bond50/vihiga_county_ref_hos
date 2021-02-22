@@ -40,6 +40,7 @@ import Login from "../components/auth/login";
 import Logout from "../components/auth/logout";
 import Layout from "../hocs/Layout/Layout";
 import Contact from "../components/Contact/Contact";
+import Biomedical from "../components/Services/Departments/BiomedicalEngineering";
 
 
 const App = () => {
@@ -70,6 +71,8 @@ const App = () => {
                             <Route path='/services/departments/ambulance' exact component={Ambulance}/>
                             <Route path='/services/departments/nursing' exact component={Nursing}/>
                             <Route path='/services/departments/records' exact component={HealthRecords}/>
+                            <Route path='/services/departments/bengineering' exact component={Biomedical}/>
+
                             <Route path='/services/departments/clinics' exact component={Clinics}/>
 
                             <Route path='/media-center/downloads' exact component={Downloads}/>

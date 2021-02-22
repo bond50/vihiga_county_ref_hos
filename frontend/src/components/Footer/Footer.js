@@ -90,7 +90,7 @@ const Footer = () => {
                                     Off Kisumu road,Mbale
                                 </List.Item>
                                 <List.Item>
-                                    Opposite Distruct Headquaters
+                                    Opposite District Headquaters
                                 </List.Item>
                                 <List.Item>
                                     P.O Box 1069 -50300, Maragoli

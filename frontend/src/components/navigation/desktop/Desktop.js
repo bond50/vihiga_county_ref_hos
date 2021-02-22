@@ -26,9 +26,9 @@ const Desktop = ({fixed}) => {
                 <Menu
                     borderless
                     fluid
-                    className={fixed?'fixedStyle':'notFixed'}
+                    className='notFixed'
                     fixed={fixed ? 'top' : null}
-                    size="medium">
+                    size={fixed?'medium':'huge'}>
                     <Container>
                         <Home/>
                         <MyDropdown title='About us'>

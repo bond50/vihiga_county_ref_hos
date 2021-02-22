@@ -1,7 +1,7 @@
 import React from 'react';
 import {Button, Icon, Segment} from "semantic-ui-react";
 import {Link} from "react-router-dom";
-import classes from "../HomepageHeading.module.css";
+import classes from  '../HomepageHeading.module.css';
 
 const HomeAchieved = () => (
              <Segment vertical className={classes.segment}>
@@ -15,6 +15,8 @@ const HomeAchieved = () => (
                     intends
                     to
                     provide Health Services in an enabling environment.</p>
+
+
                 <Button as={Link} to='/about/plan' animated>
                     <Button.Content visible>See more </Button.Content>
                     <Button.Content hidden><Icon name='arrow right'/></Button.Content>
