@@ -1,8 +1,16 @@
-.TopBar{
-    background-color: #2cc72e!important; ;
-    border: none!important;
-    box-shadow: none!important;
+.TopBar {
+    background: linear-gradient(45deg, #57cfb0, #2ab5d3)!important;
+    border: none !important;
+    box-shadow: none !important;
 }
-.TopBar .ui.grid>.row{
-    padding:0.5em!important; ;
+
+.TopBar .ui.grid > .row {
+    padding: 0.5em !important;;
+}
+
+@media only screen  and (max-width: 767px) {
+    .TopBar {
+      display: none;
+    }
+
 }

@@ -1,52 +1,56 @@
-import React from 'react';
-import {Container, Dropdown, Grid, Menu} from "semantic-ui-react";
+import React, {Fragment} from 'react';
+import {Container, Grid, Menu} from "semantic-ui-react";
+import MyDropdown from "../dropdown/myDropdown";
+import About from '../links/About';
+import Services from '../links/Services';
+import Media from '../links/Media';
+import Covid from '../links/Covid';
+import Contact from '../links/Contact';
+import Home from '../links/Home';
+import Tenders from '../links/Tenders';
+import Training from '../links/Training';
+import {connect} from "react-redux";
+import './Desktop.css'
+
+function mapStateToProps(state) {
+    return {
+        fixed: state.fixed.fixed
+    }
+}
 
 
-const Desktop = () => {
+const Desktop = ({fixed}) => {
     return (
-         <Grid padded className="tablet computer only">
-          <Menu borderless fluid fixed="top" size="huge">
-            <Container>
-              <Menu.Item header as="a">
-                Project Name
-              </Menu.Item>
-              <Menu.Item active as="a">
-                Home
-              </Menu.Item>
-              <Menu.Item as="a">About</Menu.Item>
-              <Menu.Item as="a">Contact</Menu.Item>
-              <Dropdown item text="Dropdown">
-                <Dropdown.Menu>
-                  <Dropdown.Item as="a" href="#root">
-                    Action
-                  </Dropdown.Item>
-                  <Dropdown.Item as="a" href="#root">
-                    Another Action
-                  </Dropdown.Item>
-                  <Dropdown.Item as="a" href="#root">
-                    Something else here
-                  </Dropdown.Item>
-                  <Dropdown.Divider />
-                  <Dropdown.Header>Navbar header</Dropdown.Header>
-                  <Dropdown.Item as="a" href="#root">
-                    Separated link
-                  </Dropdown.Item>
-                  <Dropdown.Item as="a" href="#root">
-                    One more separated link
-                  </Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>
-              <Menu.Menu position="right">
-                <Menu.Item as="a">Default</Menu.Item>
-                <Menu.Item as="a">Static top</Menu.Item>
-                <Menu.Item active as="a">
-                  Fixed top
-                </Menu.Item>
-              </Menu.Menu>
-            </Container>
-          </Menu>
-        </Grid>
+
+            <Grid padded className="tablet computer only">
+                <Menu
+                    borderless
+                    fluid
+                    className={fixed?'fixedStyle':'notFixed'}
+                    fixed={fixed ? 'top' : null}
+                    size="medium">
+                    <Container>
+                        <Home/>
+                        <MyDropdown title='About us'>
+                            <About/>
+                        </MyDropdown>
+                        <MyDropdown title='Services'>
+                            <Services/>
+                        </MyDropdown>
+                        <MyDropdown title='Media'>
+                            <Media/>
+                        </MyDropdown>
+                        <Tenders/>
+                        <Training/>
+                        <Contact/>
+                        <MyDropdown title='Covid'>
+                            <Covid/>
+                        </MyDropdown>
+                    </Container>
+                </Menu>
+            </Grid>
+
     );
 };
 
-export default Desktop;
+export default connect(mapStateToProps)(Desktop);

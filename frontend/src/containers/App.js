@@ -11,8 +11,6 @@ import NeighBoring from "../components/About/NeighBoring";
 import Projects from "../components/About/Projects/Projects";
 import Partners from "../components/About/Projects/Partners";
 import Vision from "../components/About/MissionVision/Vision";
-import CoreValues from "../components/About/MissionVision/CoreValues";
-import Mission from "../components/About/MissionVision/Mission";
 import Management from "../components/About/Management/management";
 import Organogram from "../components/About/Management/Organogram";
 import NotFound from "../components/404";
@@ -60,8 +58,6 @@ const App = () => {
                             <Route path='/about/projects/project' exact component={Projects}/>
                             <Route path='/about/projects/partners' exact component={Partners}/>
                             <Route path='/about/vision' exact component={Vision}/>
-                            <Route path='/about/core-values' exact component={CoreValues}/>
-                            <Route path='/about/mission' exact component={Mission}/>
                             <Route path='/about/management/board' exact component={Management}/>
                             <Route path='/about/management/organogram' exact component={Organogram}/>
 

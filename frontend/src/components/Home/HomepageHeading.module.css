@@ -3,15 +3,37 @@
     margin-bottom: 30px !important;
 }
 
-.segment .row {
-    padding-bottom: 0 !important;
-    padding-top: 0 !important;
-}
+
 
 .content {
     padding: 3em 0 0 0;
     position: relative;
     margin-bottom: 30px;
+}
+
+.segmentClass {
+    position: relative;
+    text-align: left;
+    background-image: url('../../assets/home/home.png');
+    color: #ffffff;
+    height: 70vh;
+    background-position: center center;
+    background-attachment: fixed;
+    opacity: 0.9;
+    background-size: cover;
+    background-color: #464646;
+    background-repeat: no-repeat;
+}
+
+@media only  screen and (max-width: 767px) {
+    .segmentClass {
+        background-image: url('../../assets/home/imange.png');
+        opacity: 0.9;
+        text-align: center;
+        height: 60vh;
+
+
+    }
 }
 
 .segment .h1 {
@@ -29,44 +51,3 @@
     white-space: pre-wrap !important;
 }
 
-
-.sesgoabajo {
-    z-index: 10;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    border-width: 0 0 35vh 100vw;
-    border-style: solid;
-    border-color: transparent transparent #ffffff transparent;
-}
-
-.sesgoarriba {
-    z-index: 10;
-    position: absolute;
-    left: 0;
-    top: 0;
-    border-width: 35vh 100vw 0 0;
-    border-style: solid;
-    border-color: #ffffff transparent transparent transparent;
-}
-
-.homeContainer {
-    max-width: 100%;
-}
-
-
-.callout {
-    background: url(gplaypattern.png) repeat !important;
-}
-
-.green {
-    background-color: #2cc72e !important;
-}
-
-.blue {
-    background-color: #3b5998 !important;
-}
-
-.grey {
-    background-color: #dcdcdc !important;
-}

@@ -7,30 +7,30 @@ import img4 from '../../../assets/carousel/three.JPG'
 
 import {Carousel} from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import {Image} from "semantic-ui-react";
 
 
+const Slider = () => {
+    return <Carousel autoPlay infiniteLoop showThumbs={false}>
 
-const Slider = () => <Carousel autoPlay infiniteLoop showThumbs={false}>
 
         <>
-            <img src={img1} alt='mmm' />
-            <p className="legend ">Legend 3</p>
+            <Image src={img1} alt='mmm'/>
         </>
         <>
             <img src={img2} alt='mmm' style={{width: '100%', maxHeight: '100%'}}/>
-            <p className="legend ">Legend 3</p>
         </>
         <>
             <img src={img3} alt='mmm' style={{width: '100%', maxHeight: '100%'}}/>
-            <p className="legend">Legend 3</p>
         </>
 
-        <img src={img4} alt='mmm' style={{width: '100%', maxHeight: '100%'}}/>
-        <p className="legend">Legend 3</p>
+        <>
+            <img src={img4} alt='mmm' style={{width: '100%', maxHeight: '100%'}}/>
+        </>
 
 
-
-</Carousel>;
+    </Carousel>;
+};
 
 export default Slider;
 

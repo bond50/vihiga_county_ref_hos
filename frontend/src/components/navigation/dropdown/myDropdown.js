@@ -1,30 +1,14 @@
 import React from 'react';
-import {Container} from "semantic-ui-react";
+import {Dropdown} from "semantic-ui-react";
 
-const Dropdown = () => {
+const MyDropdown = ({children,title}) => {
     return (
-          <Dropdown item text="Dropdown">
+          <Dropdown item text={title}>
                 <Dropdown.Menu>
-                  <Dropdown.Item as="a" href="#root">
-                    Action
-                  </Dropdown.Item>
-                  <Dropdown.Item as="a" href="#root">
-                    Another Action
-                  </Dropdown.Item>
-                  <Dropdown.Item as="a" href="#root">
-                    Something else here
-                  </Dropdown.Item>
-                  <Dropdown.Divider />
-                  <Dropdown.Header>Navbar header</Dropdown.Header>
-                  <Dropdown.Item as="a" href="#root">
-                    Separated link
-                  </Dropdown.Item>
-                  <Dropdown.Item as="a" href="#root">
-                    One more separated link
-                  </Dropdown.Item>
+                    {children}
                 </Dropdown.Menu>
               </Dropdown>
     );
 };
 
-export default Dropdown;
+export default MyDropdown;

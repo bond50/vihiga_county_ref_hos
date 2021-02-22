@@ -1,57 +1,75 @@
 import React from 'react';
-import {Button, Dropdown, Grid, Icon, Menu} from "semantic-ui-react";
-import './Mobile.css'
+import {Button, Grid, Icon, Menu} from "semantic-ui-react";
+import './Mobile.css';
+import MyDropdown from "../dropdown/myDropdown";
+import About from '../links/About';
+import Services from '../links/Services'
+import Covid from '../links/Covid';
+import Media from '../links/Media';
+import Contact from '../links/Contact';
+import Home from '../links/Home';
+import Tenders from '../links/Tenders';
+import Training from '../links/Training';
+import {connect} from "react-redux";
+import {Link} from "react-router-dom";
 
-const Mobile = ({handleDropToggleDropdownMenu, dropMenuStyle}) => {
+
+function mapStateToProps(state) {
+    return {
+        fixed: state.fixed.fixed
+    }
+}
+
+
+const Mobile = ({handleDropToggleDropdownMenu, dropMenuStyle, fixed}) => {
     return (
-         <Grid padded className="mobile only">
-          <Menu borderless fluid fixed="top" size="huge">
-            <Menu.Item header as="a">
-              Project Nam
-            </Menu.Item>
-            <Menu.Menu position="right">
-              <Menu.Item>
-                <Button
-                  icon
-                  basic
-                  toggle
-                  onClick={handleDropToggleDropdownMenu}
-                >
-                  <Icon name="content" />
-                </Button>
-              </Menu.Item>
-            </Menu.Menu>
+        <Grid padded className="mobile only">
             <Menu
-              vertical
-              borderless
-              fluid
-              style={dropMenuStyle}
-            >
-              <Menu.Item active as="a">
-                Home
-              </Menu.Item>
-              <Menu.Item as="a">About</Menu.Item>
-              <Menu.Item as="a">Contact</Menu.Item>
-              <Dropdown text="Dropdown" className="item">
-                <Dropdown.Menu>
-                  <Dropdown.Item as="a">Action</Dropdown.Item>
-                  <Dropdown.Item as="a">Another action</Dropdown.Item>
-                  <Dropdown.Item as="a">Something else here</Dropdown.Item>
-                  <Dropdown.Divider />
-                  <Dropdown.Header>Navbar header</Dropdown.Header>
-                  <Dropdown.Item as="a">Seperated link</Dropdown.Item>
-                  <Dropdown.Item as="a">One more seperated link</Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>
-              <Menu.Item as="a">Default</Menu.Item>
-              <Menu.Item as="a">Static top</Menu.Item>
-              <Menu.Item active as="a">
-                Fixed top
-              </Menu.Item>
+                borderless
+                fluid
+                fixed={fixed ? 'top' : null}
+                size="huge">
+                <Menu.Item header as={Link}  to='/'>
+                    Logo
+                </Menu.Item>
+                <Menu.Menu position="right">
+                    <Menu.Item>
+                        <Button
+                            icon
+                            primary
+                            toggle
+                            onClick={handleDropToggleDropdownMenu}
+                        >
+                            <Icon name="content"/>
+                        </Button>
+                    </Menu.Item>
+                </Menu.Menu>
+                <Menu
+                    vertical
+                    borderless
+                    fluid
+                    style={dropMenuStyle}
+                >
+                    <Home clicked={handleDropToggleDropdownMenu}/>
+                    <MyDropdown title='About'>
+                        <About clicked={handleDropToggleDropdownMenu}/>
+                    </MyDropdown>
+                    <MyDropdown title='Services'>
+                        <Services clicked={handleDropToggleDropdownMenu}/>
+                    </MyDropdown>
+                    <MyDropdown title='Media Center'>
+                        <Media clicked={handleDropToggleDropdownMenu}/>
+                    </MyDropdown>
+                    <Tenders clicked={handleDropToggleDropdownMenu}/>
+                    <Training clicked={handleDropToggleDropdownMenu}/>
+                    <Contact clicked={handleDropToggleDropdownMenu}/>
+                    <MyDropdown title='Covid'>
+                        <Covid clicked={handleDropToggleDropdownMenu}/>
+                    </MyDropdown>
+                </Menu>
             </Menu>
-          </Menu>
         </Grid>
     );
 };
 
-export default Mobile;
+export default connect(mapStateToProps)(Mobile);

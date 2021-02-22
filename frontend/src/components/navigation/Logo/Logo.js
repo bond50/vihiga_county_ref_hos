@@ -1,13 +1,10 @@
 import React from 'react';
-import {myStyles} from './Logo.module.css';
-import logo from '../../../../assets/logo/lognobg.png';
-
+import logo from '../../../assets/logo/lognobg.png';
+import {Image} from "semantic-ui-react";
 
 
 const Logo = () => (
-    <div className={myStyles} >
-        <img src={logo} alt='Logo'/>
-    </div>
+    <Image src={logo} size='small' />
 );
 
 export default Logo;

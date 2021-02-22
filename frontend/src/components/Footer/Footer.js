@@ -148,7 +148,8 @@ const Footer = () => {
 
                     <Grid columns={4} stackable>
                         <Grid.Column>
-                            <Button color='facebook' size='tiny' as='a' href='https://facebook.com'>
+                            <Button color='facebook' size='tiny' as='a'
+                                    href='https://www.facebook.com/Vihiga-County-Referral-Hospital-100375528619736/?view_public_for=100375528619736'>
                                 <Icon name='facebook'/> Official Facebook Page
                             </Button>
                         </Grid.Column>
@@ -170,7 +171,8 @@ const Footer = () => {
                     </Grid>
                     <Divider inverted section/>
                     <p>
-                        Copyright <Icon name='copyright outline'/> 2020 - {thisYear}  Vihiga County Referral Hospital, Inc. All rights reserved
+                        Copyright <Icon name='copyright outline'/> 2020 - {thisYear} Vihiga County Referral Hospital,
+                        Inc. All rights reserved
                     </p>
                     <div className='fixedBtn'>
                         <Button icon='angle up'

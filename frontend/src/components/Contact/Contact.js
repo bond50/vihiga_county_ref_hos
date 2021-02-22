@@ -1,14 +1,14 @@
 import React, {Fragment, useState} from "react";
-import {Button, Form, Icon, Message, Segment} from "semantic-ui-react";
+import {Button, Form,} from "semantic-ui-react";
 import classes from './contact.module.css';
 import axiosInstance from "../axios/axios";
 
-import ContactHeading from "./Heading/ContactHeading";
+
 import {useHistory} from "react-router";
 
 
 const initialValues = {
-    firstname: 'waldguard',
+    firstname: 'walter',
     lastname: 'galavu',
     email: 'galavu10@gmail.com',
     subject: 'Malaria',
@@ -38,7 +38,7 @@ const Contact = () => {
     };
     const handleSubmit = () => {
 
-        setValues({
+        setValues( {
             ...values, loading: true, err: false,
         })
         axiosInstance.post(`contact/`, {
@@ -143,11 +143,10 @@ const Contact = () => {
     );
     return (
         <Fragment>
-            <ContactHeading title={successMessage ? "Message Sent Successfully" : 'Contact us'}/>
             <div className={classes.body}>
                 <div className={classes.container}>
-                    {showError()}
                     {showForm && contactForm()}
+                    {showError()}
                 </div>
             </div>
         </Fragment>

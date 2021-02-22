@@ -1,12 +1,16 @@
 import React from 'react';
 import {Segment} from "semantic-ui-react";
-import classes from './HeadingTemplate.module.css';
 
-const HeadingTemplate = ({children}) => (
-    <Segment textAlign='center' vertical className={classes.segmentAfterNav} >
+
+const HeadingTemplate = ({children,className}) => (
+    <Segment
+        textAlign='center'
+        vertical
+        inverted
+        className={className}
+        >
         {children}
     </Segment>
-
 )
 
 export default HeadingTemplate;

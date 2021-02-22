@@ -2,7 +2,7 @@ import React from 'react';
 import {Button, Divider, Grid, Icon, Segment} from "semantic-ui-react";
 import ImageGallaryComponent from "../Slider/corousel";
 import classes from "./HomeWelcome.module.css";
-import {YearsOperated} from "../../navigation/desktop/navigationItems/Topbar/YearsOperated/YearsOperated";
+import {YearsOperated} from "../../navigation/Topbar/YearsOperated/YearsOperated";
 import {Link} from "react-router-dom";
 
 const HomeWelcome = () => (

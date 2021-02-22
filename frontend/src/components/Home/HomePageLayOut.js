@@ -10,6 +10,8 @@ import classes from './HomepageHeading.module.css'
 
 const HomepageLayout = () => (
         <React.Fragment>
+            <div className={classes.segmentClass}>
+            </div>
             <Container className={classes.content}>
                 <HomeWelcome/>
                 <HomeAchieved/>

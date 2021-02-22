@@ -1,8 +1,7 @@
 .segment {
-    border: 1px solid #ccc !important;
     padding: 30px 2.5% !important;
     position: relative !important;
-    background: #fff !important;
-    margin: 4em 0 2em 0 !important;
+    background: #fefefe !important;
+    margin: 2em 0 2em 0 !important;
 }
 
