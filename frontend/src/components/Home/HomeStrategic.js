@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button, Divider, Grid,  Icon, Image, Segment} from "semantic-ui-react";
+import {Button,  Grid,  Icon, Image, Segment} from "semantic-ui-react";
 import {Link} from "react-router-dom";
 import image from "../../assets/plan/strategic.jpg";
 import classes from "./HomepageHeading.module.css";
@@ -10,7 +10,7 @@ const HomeStrategic = () => {
         <Segment vertical className={classes.segment} >
             <Grid stackable divided='vertically' >
                 <Grid.Row stretched verticalAlign='middle'>
-                    <Grid.Column width={6} style={{backgroundColor:'#8ccf69',padding:'0.3em'}}>
+                    <Grid.Column width={6} style={{backgroundColor:'#f4f43f',padding:'0.3em'}}>
                         <Image src={image}/>
                     </Grid.Column>
                     <Grid.Column width={10} floated='right'>

@@ -74,12 +74,12 @@ const Footer = () => {
                 vertical
                 style={{padding: '5em 0em'}} className='pattern'>
 
-                <div className='sesgoarriba-small'>
+                {/*<div className='sesgoarriba-small'>*/}
 
-                </div>
-                <div className='sesgoabajo-small'>
+                {/*</div>*/}
+                {/*<div className='sesgoabajo-small'>*/}
 
-                </div>
+                {/*</div>*/}
                 <Container>
                     <Grid divided stackable inverted columns={4}>
 

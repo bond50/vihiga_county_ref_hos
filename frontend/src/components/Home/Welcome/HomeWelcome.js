@@ -6,7 +6,7 @@ import {YearsOperated} from "../../navigation/Topbar/YearsOperated/YearsOperated
 import {Link} from "react-router-dom";
 
 const HomeWelcome = () => (
-    <Segment vertical className={classes.segmentYellow}>
+    <Segment vertical className={classes.segment}>
         <Grid stackable divided='vertically' relaxed container>
             <Grid.Row >
                 <Grid.Column width={10} >

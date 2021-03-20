@@ -6,10 +6,10 @@ import classes from "./HomepageHeading.module.css";
 const HomePrincipals = () => {
 
     return (
-        <Segment inverted  vertical className={classes.segmentYellow} >
+        <Segment inverted  vertical className={classes.segment} >
             <Grid stackable columns='equal'>
                 <Grid.Column
-                    style={{backgroundColor: '#8ccf69', marginRight: '1em', padding: '3em', textAlign: 'center'}}>
+                    style={{backgroundColor: '#2cc72e', marginRight: '1em', padding: '3em', textAlign: 'center'}}>
                     <h2 >
                         Our Core Values
                     </h2>
@@ -21,7 +21,7 @@ const HomePrincipals = () => {
                 </Grid.Column>
 
                 <Grid.Column
-                    style={{backgroundColor: '#8ccf69', marginRight: '1em', padding: '3em', textAlign: 'center'}}>
+                    style={{backgroundColor: '#2cc72e', marginRight: '1em', padding: '3em', textAlign: 'center'}}>
                     <h2>
                         Our Vision
                     </h2>
@@ -31,7 +31,7 @@ const HomePrincipals = () => {
                     </p>
                 </Grid.Column>
                   <Grid.Column
-                    style={{backgroundColor: '#8ccf69', padding: '3em', textAlign: 'center'}}>
+                    style={{backgroundColor: '#2cc72e', padding: '3em', textAlign: 'center'}}>
                     <h2>
                         Our Vision
                     </h2>

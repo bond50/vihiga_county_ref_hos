@@ -23,7 +23,7 @@ const Contact = () => {
     const history = useHistory();
     const [values, setValues] = useState(initialValues);
 
-    const {firstname, lastname, email, subject, message, successMessage, showForm, loading, err} = values
+    const {firstname, lastname, email, subject, message, showForm, loading, err} = values
 
 
     const handleChange = (event) => {

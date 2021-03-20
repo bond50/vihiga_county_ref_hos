@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react';
+import React  from 'react';
 import {Container, Grid, Menu} from "semantic-ui-react";
 import MyDropdown from "../dropdown/myDropdown";
 import About from '../links/About';
@@ -29,7 +29,7 @@ const Desktop = ({fixed}) => {
                     widths={8}
                     className='notFixed'
                     fixed={fixed ? 'top' : null}
-                    size='medium'>
+                    size='large'>
                     <Container>
                         <Home/>
                         <MyDropdown title='About us'>

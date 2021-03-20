@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 import {Container, Grid, Header, Segment} from "semantic-ui-react";
 import {segment} from './AboutContainer.module.css'
 
